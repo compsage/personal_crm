@@ -71,8 +71,8 @@
         }
       ],
       "tags": [
-        "synthesizers",
-        "vintage"
+        "vintage",
+        "synthesizers"
       ],
       "created_at": "2025-11-10T21:36:18.007363+00:00",
       "last_updated": "2025-11-10T21:36:18.007363+00:00"
@@ -115,8 +115,8 @@
         }
       ],
       "tags": [
-        "community projects",
-        "solar"
+        "solar",
+        "community projects"
       ],
       "created_at": "2025-11-10T21:36:21.594187+00:00",
       "last_updated": "2025-11-10T21:36:21.594187+00:00"
@@ -162,8 +162,8 @@
         }
       ],
       "tags": [
-        "synthesizers",
-        "vintage"
+        "vintage",
+        "synthesizers"
       ],
       "created_at": "2025-11-10T21:37:03.475915+00:00",
       "last_updated": "2025-11-10T21:37:03.475915+00:00"
@@ -209,8 +209,8 @@
         }
       ],
       "tags": [
-        "synthesizers",
-        "vintage"
+        "vintage",
+        "synthesizers"
       ],
       "created_at": "2025-11-10T21:38:39.207066+00:00",
       "last_updated": "2025-11-10T21:38:39.207066+00:00"
@@ -256,8 +256,8 @@
         }
       ],
       "tags": [
-        "community projects",
-        "solar"
+        "solar",
+        "community projects"
       ],
       "created_at": "2025-11-10T21:39:00.126524+00:00",
       "last_updated": "2025-11-10T21:39:00.126524+00:00"
@@ -280,8 +280,8 @@
         }
       ],
       "tags": [
-        "rescue",
-        "greyhounds"
+        "greyhounds",
+        "rescue"
       ],
       "created_at": "2025-11-10T21:39:19.815027+00:00",
       "last_updated": "2025-11-10T21:39:19.815027+00:00"
@@ -386,8 +386,8 @@
         }
       ],
       "tags": [
-        "synthesizers",
-        "vintage"
+        "vintage",
+        "synthesizers"
       ],
       "created_at": "2025-11-10T22:10:08.717645+00:00",
       "last_updated": "2025-11-10T22:10:08.717645+00:00"
@@ -450,6 +450,36 @@
       ],
       "created_at": "2025-11-10T22:11:26.620075+00:00",
       "last_updated": "2025-11-10T22:11:26.620075+00:00"
+    },
+    {
+      "id": "person_Priya_004",
+      "name": "Priya",
+      "hash_id": "76f6127a0aaad341",
+      "metadata": {
+        "social_media": {
+          "other": {}
+        },
+        "occupation": "robotics startup worker",
+        "company": "robotics startup"
+      },
+      "facts": [
+        {
+          "content": "Met Priya",
+          "type": "background",
+          "timestamp": "2025-11-10T22:15:21.722072+00:00"
+        },
+        {
+          "content": "Works at a robotics startup",
+          "type": "professional",
+          "timestamp": "2025-11-10T22:15:21.722072+00:00"
+        }
+      ],
+      "tags": [
+        "robotics",
+        "startup"
+      ],
+      "created_at": "2025-11-10T22:15:21.722072+00:00",
+      "last_updated": "2025-11-10T22:15:21.722072+00:00"
     }
   ]
 }
