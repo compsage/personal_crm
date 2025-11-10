@@ -1,0 +1,5982 @@
+{
+  "tests": [
+    {
+      "name": "add_new_person_001",
+      "description": "Create new person record for Priya",
+      "request": {
+        "user_input": "Met Priya who works at a robotics startup.",
+        "command_type": "ADD_NEW",
+        "context": {
+          "matching_entities": [],
+          "related_entities": [],
+          "recent_interactions": [],
+          "existing_facts": [],
+          "existing_relationships": []
+        }
+      },
+      "expectations": [
+        {
+          "path": "command_type",
+          "equals": "ADD_NEW"
+        },
+        {
+          "path": "entity_resolution.primary_person.name",
+          "equals": "Priya"
+        },
+        {
+          "path": "entity_resolution.primary_person.is_new",
+          "equals": true
+        },
+        {
+          "path": "facts[0].category",
+          "equals": "professional"
+        },
+        {
+          "path": "facts[0].content",
+          "contains": "robotics"
+        }
+      ]
+    },
+    {
+      "name": "add_new_person_002",
+      "description": "Create new person record for Leo",
+      "request": {
+        "user_input": "Met Leo who runs a ceramic studio.",
+        "command_type": "ADD_NEW",
+        "context": {
+          "matching_entities": [],
+          "related_entities": [],
+          "recent_interactions": [],
+          "existing_facts": [],
+          "existing_relationships": []
+        }
+      },
+      "expectations": [
+        {
+          "path": "command_type",
+          "equals": "ADD_NEW"
+        },
+        {
+          "path": "entity_resolution.primary_person.name",
+          "equals": "Leo"
+        },
+        {
+          "path": "entity_resolution.primary_person.is_new",
+          "equals": true
+        },
+        {
+          "path": "facts[0].category",
+          "equals": "professional"
+        },
+        {
+          "path": "facts[0].content",
+          "contains": "ceramic"
+        }
+      ]
+    },
+    {
+      "name": "add_new_person_003",
+      "description": "Create new person record for Amara",
+      "request": {
+        "user_input": "Met Amara who collects vintage synthesizers.",
+        "command_type": "ADD_NEW",
+        "context": {
+          "matching_entities": [],
+          "related_entities": [],
+          "recent_interactions": [],
+          "existing_facts": [],
+          "existing_relationships": []
+        }
+      },
+      "expectations": [
+        {
+          "path": "command_type",
+          "equals": "ADD_NEW"
+        },
+        {
+          "path": "entity_resolution.primary_person.name",
+          "equals": "Amara"
+        },
+        {
+          "path": "entity_resolution.primary_person.is_new",
+          "equals": true
+        },
+        {
+          "path": "facts[0].category",
+          "equals": "possession"
+        },
+        {
+          "path": "facts[0].content",
+          "contains": "synth"
+        }
+      ]
+    },
+    {
+      "name": "add_new_person_004",
+      "description": "Create new person record for Felix",
+      "request": {
+        "user_input": "Met Felix who is learning Italian cuisine.",
+        "command_type": "ADD_NEW",
+        "context": {
+          "matching_entities": [],
+          "related_entities": [],
+          "recent_interactions": [],
+          "existing_facts": [],
+          "existing_relationships": []
+        }
+      },
+      "expectations": [
+        {
+          "path": "command_type",
+          "equals": "ADD_NEW"
+        },
+        {
+          "path": "entity_resolution.primary_person.name",
+          "equals": "Felix"
+        },
+        {
+          "path": "entity_resolution.primary_person.is_new",
+          "equals": true
+        },
+        {
+          "path": "facts[0].category",
+          "equals": "personal"
+        },
+        {
+          "path": "facts[0].content",
+          "contains": "Italian"
+        }
+      ]
+    },
+    {
+      "name": "add_new_person_005",
+      "description": "Create new person record for Nadia",
+      "request": {
+        "user_input": "Met Nadia who spearheads community solar projects.",
+        "command_type": "ADD_NEW",
+        "context": {
+          "matching_entities": [],
+          "related_entities": [],
+          "recent_interactions": [],
+          "existing_facts": [],
+          "existing_relationships": []
+        }
+      },
+      "expectations": [
+        {
+          "path": "command_type",
+          "equals": "ADD_NEW"
+        },
+        {
+          "path": "entity_resolution.primary_person.name",
+          "equals": "Nadia"
+        },
+        {
+          "path": "entity_resolution.primary_person.is_new",
+          "equals": true
+        },
+        {
+          "path": "facts[0].category",
+          "equals": "activity"
+        },
+        {
+          "path": "facts[0].content",
+          "contains": "solar"
+        }
+      ]
+    },
+    {
+      "name": "add_new_person_006",
+      "description": "Create new person record for Hector",
+      "request": {
+        "user_input": "Met Hector who breeds rescue greyhounds.",
+        "command_type": "ADD_NEW",
+        "context": {
+          "matching_entities": [],
+          "related_entities": [],
+          "recent_interactions": [],
+          "existing_facts": [],
+          "existing_relationships": []
+        }
+      },
+      "expectations": [
+        {
+          "path": "command_type",
+          "equals": "ADD_NEW"
+        },
+        {
+          "path": "entity_resolution.primary_person.name",
+          "equals": "Hector"
+        },
+        {
+          "path": "entity_resolution.primary_person.is_new",
+          "equals": true
+        },
+        {
+          "path": "facts[0].category",
+          "equals": "activity"
+        },
+        {
+          "path": "facts[0].content",
+          "contains": "greyhound"
+        }
+      ]
+    },
+    {
+      "name": "add_new_person_007",
+      "description": "Create new person record for Isla",
+      "request": {
+        "user_input": "Met Isla who designs accessible playgrounds.",
+        "command_type": "ADD_NEW",
+        "context": {
+          "matching_entities": [],
+          "related_entities": [],
+          "recent_interactions": [],
+          "existing_facts": [],
+          "existing_relationships": []
+        }
+      },
+      "expectations": [
+        {
+          "path": "command_type",
+          "equals": "ADD_NEW"
+        },
+        {
+          "path": "entity_resolution.primary_person.name",
+          "equals": "Isla"
+        },
+        {
+          "path": "entity_resolution.primary_person.is_new",
+          "equals": true
+        },
+        {
+          "path": "facts[0].category",
+          "equals": "professional"
+        },
+        {
+          "path": "facts[0].content",
+          "contains": "playground"
+        }
+      ]
+    },
+    {
+      "name": "add_new_person_008",
+      "description": "Create new person record for Ravi",
+      "request": {
+        "user_input": "Met Ravi who invests in sustainable timber.",
+        "command_type": "ADD_NEW",
+        "context": {
+          "matching_entities": [],
+          "related_entities": [],
+          "recent_interactions": [],
+          "existing_facts": [],
+          "existing_relationships": []
+        }
+      },
+      "expectations": [
+        {
+          "path": "command_type",
+          "equals": "ADD_NEW"
+        },
+        {
+          "path": "entity_resolution.primary_person.name",
+          "equals": "Ravi"
+        },
+        {
+          "path": "entity_resolution.primary_person.is_new",
+          "equals": true
+        },
+        {
+          "path": "facts[0].category",
+          "equals": "professional"
+        },
+        {
+          "path": "facts[0].content",
+          "contains": "timber"
+        }
+      ]
+    },
+    {
+      "name": "add_new_person_009",
+      "description": "Create new person record for Carmen",
+      "request": {
+        "user_input": "Met Carmen who hosts a weekly philosophy salon.",
+        "command_type": "ADD_NEW",
+        "context": {
+          "matching_entities": [],
+          "related_entities": [],
+          "recent_interactions": [],
+          "existing_facts": [],
+          "existing_relationships": []
+        }
+      },
+      "expectations": [
+        {
+          "path": "command_type",
+          "equals": "ADD_NEW"
+        },
+        {
+          "path": "entity_resolution.primary_person.name",
+          "equals": "Carmen"
+        },
+        {
+          "path": "entity_resolution.primary_person.is_new",
+          "equals": true
+        },
+        {
+          "path": "facts[0].category",
+          "equals": "activity"
+        },
+        {
+          "path": "facts[0].content",
+          "contains": "salon"
+        }
+      ]
+    },
+    {
+      "name": "add_new_person_010",
+      "description": "Create new person record for Jonas",
+      "request": {
+        "user_input": "Met Jonas who is obsessed with single-origin chocolate.",
+        "command_type": "ADD_NEW",
+        "context": {
+          "matching_entities": [],
+          "related_entities": [],
+          "recent_interactions": [],
+          "existing_facts": [],
+          "existing_relationships": []
+        }
+      },
+      "expectations": [
+        {
+          "path": "command_type",
+          "equals": "ADD_NEW"
+        },
+        {
+          "path": "entity_resolution.primary_person.name",
+          "equals": "Jonas"
+        },
+        {
+          "path": "entity_resolution.primary_person.is_new",
+          "equals": true
+        },
+        {
+          "path": "facts[0].category",
+          "equals": "preference"
+        },
+        {
+          "path": "facts[0].content",
+          "contains": "chocolate"
+        }
+      ]
+    },
+    {
+      "name": "add_new_person_011",
+      "description": "Create new person record for Marta",
+      "request": {
+        "user_input": "Met Marta who works at a robotics startup.",
+        "command_type": "ADD_NEW",
+        "context": {
+          "matching_entities": [],
+          "related_entities": [],
+          "recent_interactions": [],
+          "existing_facts": [],
+          "existing_relationships": []
+        }
+      },
+      "expectations": [
+        {
+          "path": "command_type",
+          "equals": "ADD_NEW"
+        },
+        {
+          "path": "entity_resolution.primary_person.name",
+          "equals": "Marta"
+        },
+        {
+          "path": "entity_resolution.primary_person.is_new",
+          "equals": true
+        },
+        {
+          "path": "facts[0].category",
+          "equals": "professional"
+        },
+        {
+          "path": "facts[0].content",
+          "contains": "robotics"
+        }
+      ]
+    },
+    {
+      "name": "add_new_person_012",
+      "description": "Create new person record for Owen",
+      "request": {
+        "user_input": "Met Owen who runs a ceramic studio.",
+        "command_type": "ADD_NEW",
+        "context": {
+          "matching_entities": [],
+          "related_entities": [],
+          "recent_interactions": [],
+          "existing_facts": [],
+          "existing_relationships": []
+        }
+      },
+      "expectations": [
+        {
+          "path": "command_type",
+          "equals": "ADD_NEW"
+        },
+        {
+          "path": "entity_resolution.primary_person.name",
+          "equals": "Owen"
+        },
+        {
+          "path": "entity_resolution.primary_person.is_new",
+          "equals": true
+        },
+        {
+          "path": "facts[0].category",
+          "equals": "professional"
+        },
+        {
+          "path": "facts[0].content",
+          "contains": "ceramic"
+        }
+      ]
+    },
+    {
+      "name": "add_new_person_013",
+      "description": "Create new person record for Kasia",
+      "request": {
+        "user_input": "Met Kasia who collects vintage synthesizers.",
+        "command_type": "ADD_NEW",
+        "context": {
+          "matching_entities": [],
+          "related_entities": [],
+          "recent_interactions": [],
+          "existing_facts": [],
+          "existing_relationships": []
+        }
+      },
+      "expectations": [
+        {
+          "path": "command_type",
+          "equals": "ADD_NEW"
+        },
+        {
+          "path": "entity_resolution.primary_person.name",
+          "equals": "Kasia"
+        },
+        {
+          "path": "entity_resolution.primary_person.is_new",
+          "equals": true
+        },
+        {
+          "path": "facts[0].category",
+          "equals": "possession"
+        },
+        {
+          "path": "facts[0].content",
+          "contains": "synth"
+        }
+      ]
+    },
+    {
+      "name": "add_new_person_014",
+      "description": "Create new person record for Eli",
+      "request": {
+        "user_input": "Met Eli who is learning Italian cuisine.",
+        "command_type": "ADD_NEW",
+        "context": {
+          "matching_entities": [],
+          "related_entities": [],
+          "recent_interactions": [],
+          "existing_facts": [],
+          "existing_relationships": []
+        }
+      },
+      "expectations": [
+        {
+          "path": "command_type",
+          "equals": "ADD_NEW"
+        },
+        {
+          "path": "entity_resolution.primary_person.name",
+          "equals": "Eli"
+        },
+        {
+          "path": "entity_resolution.primary_person.is_new",
+          "equals": true
+        },
+        {
+          "path": "facts[0].category",
+          "equals": "personal"
+        },
+        {
+          "path": "facts[0].content",
+          "contains": "Italian"
+        }
+      ]
+    },
+    {
+      "name": "add_new_person_015",
+      "description": "Create new person record for Pilar",
+      "request": {
+        "user_input": "Met Pilar who spearheads community solar projects.",
+        "command_type": "ADD_NEW",
+        "context": {
+          "matching_entities": [],
+          "related_entities": [],
+          "recent_interactions": [],
+          "existing_facts": [],
+          "existing_relationships": []
+        }
+      },
+      "expectations": [
+        {
+          "path": "command_type",
+          "equals": "ADD_NEW"
+        },
+        {
+          "path": "entity_resolution.primary_person.name",
+          "equals": "Pilar"
+        },
+        {
+          "path": "entity_resolution.primary_person.is_new",
+          "equals": true
+        },
+        {
+          "path": "facts[0].category",
+          "equals": "activity"
+        },
+        {
+          "path": "facts[0].content",
+          "contains": "solar"
+        }
+      ]
+    },
+    {
+      "name": "add_new_person_016",
+      "description": "Create new person record for Victor",
+      "request": {
+        "user_input": "Met Victor who breeds rescue greyhounds.",
+        "command_type": "ADD_NEW",
+        "context": {
+          "matching_entities": [],
+          "related_entities": [],
+          "recent_interactions": [],
+          "existing_facts": [],
+          "existing_relationships": []
+        }
+      },
+      "expectations": [
+        {
+          "path": "command_type",
+          "equals": "ADD_NEW"
+        },
+        {
+          "path": "entity_resolution.primary_person.name",
+          "equals": "Victor"
+        },
+        {
+          "path": "entity_resolution.primary_person.is_new",
+          "equals": true
+        },
+        {
+          "path": "facts[0].category",
+          "equals": "activity"
+        },
+        {
+          "path": "facts[0].content",
+          "contains": "greyhound"
+        }
+      ]
+    },
+    {
+      "name": "add_new_person_017",
+      "description": "Create new person record for Lena",
+      "request": {
+        "user_input": "Met Lena who designs accessible playgrounds.",
+        "command_type": "ADD_NEW",
+        "context": {
+          "matching_entities": [],
+          "related_entities": [],
+          "recent_interactions": [],
+          "existing_facts": [],
+          "existing_relationships": []
+        }
+      },
+      "expectations": [
+        {
+          "path": "command_type",
+          "equals": "ADD_NEW"
+        },
+        {
+          "path": "entity_resolution.primary_person.name",
+          "equals": "Lena"
+        },
+        {
+          "path": "entity_resolution.primary_person.is_new",
+          "equals": true
+        },
+        {
+          "path": "facts[0].category",
+          "equals": "professional"
+        },
+        {
+          "path": "facts[0].content",
+          "contains": "playground"
+        }
+      ]
+    },
+    {
+      "name": "add_new_person_018",
+      "description": "Create new person record for Darius",
+      "request": {
+        "user_input": "Met Darius who invests in sustainable timber.",
+        "command_type": "ADD_NEW",
+        "context": {
+          "matching_entities": [],
+          "related_entities": [],
+          "recent_interactions": [],
+          "existing_facts": [],
+          "existing_relationships": []
+        }
+      },
+      "expectations": [
+        {
+          "path": "command_type",
+          "equals": "ADD_NEW"
+        },
+        {
+          "path": "entity_resolution.primary_person.name",
+          "equals": "Darius"
+        },
+        {
+          "path": "entity_resolution.primary_person.is_new",
+          "equals": true
+        },
+        {
+          "path": "facts[0].category",
+          "equals": "professional"
+        },
+        {
+          "path": "facts[0].content",
+          "contains": "timber"
+        }
+      ]
+    },
+    {
+      "name": "add_new_person_019",
+      "description": "Create new person record for Ines",
+      "request": {
+        "user_input": "Met Ines who hosts a weekly philosophy salon.",
+        "command_type": "ADD_NEW",
+        "context": {
+          "matching_entities": [],
+          "related_entities": [],
+          "recent_interactions": [],
+          "existing_facts": [],
+          "existing_relationships": []
+        }
+      },
+      "expectations": [
+        {
+          "path": "command_type",
+          "equals": "ADD_NEW"
+        },
+        {
+          "path": "entity_resolution.primary_person.name",
+          "equals": "Ines"
+        },
+        {
+          "path": "entity_resolution.primary_person.is_new",
+          "equals": true
+        },
+        {
+          "path": "facts[0].category",
+          "equals": "activity"
+        },
+        {
+          "path": "facts[0].content",
+          "contains": "salon"
+        }
+      ]
+    },
+    {
+      "name": "add_new_person_020",
+      "description": "Create new person record for Marco",
+      "request": {
+        "user_input": "Met Marco who is obsessed with single-origin chocolate.",
+        "command_type": "ADD_NEW",
+        "context": {
+          "matching_entities": [],
+          "related_entities": [],
+          "recent_interactions": [],
+          "existing_facts": [],
+          "existing_relationships": []
+        }
+      },
+      "expectations": [
+        {
+          "path": "command_type",
+          "equals": "ADD_NEW"
+        },
+        {
+          "path": "entity_resolution.primary_person.name",
+          "equals": "Marco"
+        },
+        {
+          "path": "entity_resolution.primary_person.is_new",
+          "equals": true
+        },
+        {
+          "path": "facts[0].category",
+          "equals": "preference"
+        },
+        {
+          "path": "facts[0].content",
+          "contains": "chocolate"
+        }
+      ]
+    },
+    {
+      "name": "add_new_person_021",
+      "description": "Create new person record for Aya",
+      "request": {
+        "user_input": "Met Aya who works at a robotics startup.",
+        "command_type": "ADD_NEW",
+        "context": {
+          "matching_entities": [],
+          "related_entities": [],
+          "recent_interactions": [],
+          "existing_facts": [],
+          "existing_relationships": []
+        }
+      },
+      "expectations": [
+        {
+          "path": "command_type",
+          "equals": "ADD_NEW"
+        },
+        {
+          "path": "entity_resolution.primary_person.name",
+          "equals": "Aya"
+        },
+        {
+          "path": "entity_resolution.primary_person.is_new",
+          "equals": true
+        },
+        {
+          "path": "facts[0].category",
+          "equals": "professional"
+        },
+        {
+          "path": "facts[0].content",
+          "contains": "robotics"
+        }
+      ]
+    },
+    {
+      "name": "add_new_person_022",
+      "description": "Create new person record for Quinn",
+      "request": {
+        "user_input": "Met Quinn who runs a ceramic studio.",
+        "command_type": "ADD_NEW",
+        "context": {
+          "matching_entities": [],
+          "related_entities": [],
+          "recent_interactions": [],
+          "existing_facts": [],
+          "existing_relationships": []
+        }
+      },
+      "expectations": [
+        {
+          "path": "command_type",
+          "equals": "ADD_NEW"
+        },
+        {
+          "path": "entity_resolution.primary_person.name",
+          "equals": "Quinn"
+        },
+        {
+          "path": "entity_resolution.primary_person.is_new",
+          "equals": true
+        },
+        {
+          "path": "facts[0].category",
+          "equals": "professional"
+        },
+        {
+          "path": "facts[0].content",
+          "contains": "ceramic"
+        }
+      ]
+    },
+    {
+      "name": "add_new_person_023",
+      "description": "Create new person record for Silas",
+      "request": {
+        "user_input": "Met Silas who collects vintage synthesizers.",
+        "command_type": "ADD_NEW",
+        "context": {
+          "matching_entities": [],
+          "related_entities": [],
+          "recent_interactions": [],
+          "existing_facts": [],
+          "existing_relationships": []
+        }
+      },
+      "expectations": [
+        {
+          "path": "command_type",
+          "equals": "ADD_NEW"
+        },
+        {
+          "path": "entity_resolution.primary_person.name",
+          "equals": "Silas"
+        },
+        {
+          "path": "entity_resolution.primary_person.is_new",
+          "equals": true
+        },
+        {
+          "path": "facts[0].category",
+          "equals": "possession"
+        },
+        {
+          "path": "facts[0].content",
+          "contains": "synth"
+        }
+      ]
+    },
+    {
+      "name": "add_new_person_024",
+      "description": "Create new person record for Noor",
+      "request": {
+        "user_input": "Met Noor who is learning Italian cuisine.",
+        "command_type": "ADD_NEW",
+        "context": {
+          "matching_entities": [],
+          "related_entities": [],
+          "recent_interactions": [],
+          "existing_facts": [],
+          "existing_relationships": []
+        }
+      },
+      "expectations": [
+        {
+          "path": "command_type",
+          "equals": "ADD_NEW"
+        },
+        {
+          "path": "entity_resolution.primary_person.name",
+          "equals": "Noor"
+        },
+        {
+          "path": "entity_resolution.primary_person.is_new",
+          "equals": true
+        },
+        {
+          "path": "facts[0].category",
+          "equals": "personal"
+        },
+        {
+          "path": "facts[0].content",
+          "contains": "Italian"
+        }
+      ]
+    },
+    {
+      "name": "add_new_person_025",
+      "description": "Create new person record for Mateo",
+      "request": {
+        "user_input": "Met Mateo who spearheads community solar projects.",
+        "command_type": "ADD_NEW",
+        "context": {
+          "matching_entities": [],
+          "related_entities": [],
+          "recent_interactions": [],
+          "existing_facts": [],
+          "existing_relationships": []
+        }
+      },
+      "expectations": [
+        {
+          "path": "command_type",
+          "equals": "ADD_NEW"
+        },
+        {
+          "path": "entity_resolution.primary_person.name",
+          "equals": "Mateo"
+        },
+        {
+          "path": "entity_resolution.primary_person.is_new",
+          "equals": true
+        },
+        {
+          "path": "facts[0].category",
+          "equals": "activity"
+        },
+        {
+          "path": "facts[0].content",
+          "contains": "solar"
+        }
+      ]
+    },
+    {
+      "name": "add_new_person_026",
+      "description": "Create new person record for Alma",
+      "request": {
+        "user_input": "Met Alma who breeds rescue greyhounds.",
+        "command_type": "ADD_NEW",
+        "context": {
+          "matching_entities": [],
+          "related_entities": [],
+          "recent_interactions": [],
+          "existing_facts": [],
+          "existing_relationships": []
+        }
+      },
+      "expectations": [
+        {
+          "path": "command_type",
+          "equals": "ADD_NEW"
+        },
+        {
+          "path": "entity_resolution.primary_person.name",
+          "equals": "Alma"
+        },
+        {
+          "path": "entity_resolution.primary_person.is_new",
+          "equals": true
+        },
+        {
+          "path": "facts[0].category",
+          "equals": "activity"
+        },
+        {
+          "path": "facts[0].content",
+          "contains": "greyhound"
+        }
+      ]
+    },
+    {
+      "name": "add_new_person_027",
+      "description": "Create new person record for Gabe",
+      "request": {
+        "user_input": "Met Gabe who designs accessible playgrounds.",
+        "command_type": "ADD_NEW",
+        "context": {
+          "matching_entities": [],
+          "related_entities": [],
+          "recent_interactions": [],
+          "existing_facts": [],
+          "existing_relationships": []
+        }
+      },
+      "expectations": [
+        {
+          "path": "command_type",
+          "equals": "ADD_NEW"
+        },
+        {
+          "path": "entity_resolution.primary_person.name",
+          "equals": "Gabe"
+        },
+        {
+          "path": "entity_resolution.primary_person.is_new",
+          "equals": true
+        },
+        {
+          "path": "facts[0].category",
+          "equals": "professional"
+        },
+        {
+          "path": "facts[0].content",
+          "contains": "playground"
+        }
+      ]
+    },
+    {
+      "name": "add_new_person_028",
+      "description": "Create new person record for Rina",
+      "request": {
+        "user_input": "Met Rina who invests in sustainable timber.",
+        "command_type": "ADD_NEW",
+        "context": {
+          "matching_entities": [],
+          "related_entities": [],
+          "recent_interactions": [],
+          "existing_facts": [],
+          "existing_relationships": []
+        }
+      },
+      "expectations": [
+        {
+          "path": "command_type",
+          "equals": "ADD_NEW"
+        },
+        {
+          "path": "entity_resolution.primary_person.name",
+          "equals": "Rina"
+        },
+        {
+          "path": "entity_resolution.primary_person.is_new",
+          "equals": true
+        },
+        {
+          "path": "facts[0].category",
+          "equals": "professional"
+        },
+        {
+          "path": "facts[0].content",
+          "contains": "timber"
+        }
+      ]
+    },
+    {
+      "name": "add_new_person_029",
+      "description": "Create new person record for Soren",
+      "request": {
+        "user_input": "Met Soren who hosts a weekly philosophy salon.",
+        "command_type": "ADD_NEW",
+        "context": {
+          "matching_entities": [],
+          "related_entities": [],
+          "recent_interactions": [],
+          "existing_facts": [],
+          "existing_relationships": []
+        }
+      },
+      "expectations": [
+        {
+          "path": "command_type",
+          "equals": "ADD_NEW"
+        },
+        {
+          "path": "entity_resolution.primary_person.name",
+          "equals": "Soren"
+        },
+        {
+          "path": "entity_resolution.primary_person.is_new",
+          "equals": true
+        },
+        {
+          "path": "facts[0].category",
+          "equals": "activity"
+        },
+        {
+          "path": "facts[0].content",
+          "contains": "salon"
+        }
+      ]
+    },
+    {
+      "name": "add_new_person_030",
+      "description": "Create new person record for Tessa",
+      "request": {
+        "user_input": "Met Tessa who is obsessed with single-origin chocolate.",
+        "command_type": "ADD_NEW",
+        "context": {
+          "matching_entities": [],
+          "related_entities": [],
+          "recent_interactions": [],
+          "existing_facts": [],
+          "existing_relationships": []
+        }
+      },
+      "expectations": [
+        {
+          "path": "command_type",
+          "equals": "ADD_NEW"
+        },
+        {
+          "path": "entity_resolution.primary_person.name",
+          "equals": "Tessa"
+        },
+        {
+          "path": "entity_resolution.primary_person.is_new",
+          "equals": true
+        },
+        {
+          "path": "facts[0].category",
+          "equals": "preference"
+        },
+        {
+          "path": "facts[0].content",
+          "contains": "chocolate"
+        }
+      ]
+    },
+    {
+      "name": "add_new_person_031",
+      "description": "Create new person record for Luka",
+      "request": {
+        "user_input": "Met Luka who works at a robotics startup.",
+        "command_type": "ADD_NEW",
+        "context": {
+          "matching_entities": [],
+          "related_entities": [],
+          "recent_interactions": [],
+          "existing_facts": [],
+          "existing_relationships": []
+        }
+      },
+      "expectations": [
+        {
+          "path": "command_type",
+          "equals": "ADD_NEW"
+        },
+        {
+          "path": "entity_resolution.primary_person.name",
+          "equals": "Luka"
+        },
+        {
+          "path": "entity_resolution.primary_person.is_new",
+          "equals": true
+        },
+        {
+          "path": "facts[0].category",
+          "equals": "professional"
+        },
+        {
+          "path": "facts[0].content",
+          "contains": "robotics"
+        }
+      ]
+    },
+    {
+      "name": "add_new_person_032",
+      "description": "Create new person record for Ivy",
+      "request": {
+        "user_input": "Met Ivy who runs a ceramic studio.",
+        "command_type": "ADD_NEW",
+        "context": {
+          "matching_entities": [],
+          "related_entities": [],
+          "recent_interactions": [],
+          "existing_facts": [],
+          "existing_relationships": []
+        }
+      },
+      "expectations": [
+        {
+          "path": "command_type",
+          "equals": "ADD_NEW"
+        },
+        {
+          "path": "entity_resolution.primary_person.name",
+          "equals": "Ivy"
+        },
+        {
+          "path": "entity_resolution.primary_person.is_new",
+          "equals": true
+        },
+        {
+          "path": "facts[0].category",
+          "equals": "professional"
+        },
+        {
+          "path": "facts[0].content",
+          "contains": "ceramic"
+        }
+      ]
+    },
+    {
+      "name": "add_new_person_033",
+      "description": "Create new person record for Roman",
+      "request": {
+        "user_input": "Met Roman who collects vintage synthesizers.",
+        "command_type": "ADD_NEW",
+        "context": {
+          "matching_entities": [],
+          "related_entities": [],
+          "recent_interactions": [],
+          "existing_facts": [],
+          "existing_relationships": []
+        }
+      },
+      "expectations": [
+        {
+          "path": "command_type",
+          "equals": "ADD_NEW"
+        },
+        {
+          "path": "entity_resolution.primary_person.name",
+          "equals": "Roman"
+        },
+        {
+          "path": "entity_resolution.primary_person.is_new",
+          "equals": true
+        },
+        {
+          "path": "facts[0].category",
+          "equals": "possession"
+        },
+        {
+          "path": "facts[0].content",
+          "contains": "synth"
+        }
+      ]
+    },
+    {
+      "name": "add_new_person_034",
+      "description": "Create new person record for Sachi",
+      "request": {
+        "user_input": "Met Sachi who is learning Italian cuisine.",
+        "command_type": "ADD_NEW",
+        "context": {
+          "matching_entities": [],
+          "related_entities": [],
+          "recent_interactions": [],
+          "existing_facts": [],
+          "existing_relationships": []
+        }
+      },
+      "expectations": [
+        {
+          "path": "command_type",
+          "equals": "ADD_NEW"
+        },
+        {
+          "path": "entity_resolution.primary_person.name",
+          "equals": "Sachi"
+        },
+        {
+          "path": "entity_resolution.primary_person.is_new",
+          "equals": true
+        },
+        {
+          "path": "facts[0].category",
+          "equals": "personal"
+        },
+        {
+          "path": "facts[0].content",
+          "contains": "Italian"
+        }
+      ]
+    },
+    {
+      "name": "add_new_person_035",
+      "description": "Create new person record for Emil",
+      "request": {
+        "user_input": "Met Emil who spearheads community solar projects.",
+        "command_type": "ADD_NEW",
+        "context": {
+          "matching_entities": [],
+          "related_entities": [],
+          "recent_interactions": [],
+          "existing_facts": [],
+          "existing_relationships": []
+        }
+      },
+      "expectations": [
+        {
+          "path": "command_type",
+          "equals": "ADD_NEW"
+        },
+        {
+          "path": "entity_resolution.primary_person.name",
+          "equals": "Emil"
+        },
+        {
+          "path": "entity_resolution.primary_person.is_new",
+          "equals": true
+        },
+        {
+          "path": "facts[0].category",
+          "equals": "activity"
+        },
+        {
+          "path": "facts[0].content",
+          "contains": "solar"
+        }
+      ]
+    },
+    {
+      "name": "add_new_person_036",
+      "description": "Create new person record for Greta",
+      "request": {
+        "user_input": "Met Greta who breeds rescue greyhounds.",
+        "command_type": "ADD_NEW",
+        "context": {
+          "matching_entities": [],
+          "related_entities": [],
+          "recent_interactions": [],
+          "existing_facts": [],
+          "existing_relationships": []
+        }
+      },
+      "expectations": [
+        {
+          "path": "command_type",
+          "equals": "ADD_NEW"
+        },
+        {
+          "path": "entity_resolution.primary_person.name",
+          "equals": "Greta"
+        },
+        {
+          "path": "entity_resolution.primary_person.is_new",
+          "equals": true
+        },
+        {
+          "path": "facts[0].category",
+          "equals": "activity"
+        },
+        {
+          "path": "facts[0].content",
+          "contains": "greyhound"
+        }
+      ]
+    },
+    {
+      "name": "add_new_person_037",
+      "description": "Create new person record for Hana",
+      "request": {
+        "user_input": "Met Hana who designs accessible playgrounds.",
+        "command_type": "ADD_NEW",
+        "context": {
+          "matching_entities": [],
+          "related_entities": [],
+          "recent_interactions": [],
+          "existing_facts": [],
+          "existing_relationships": []
+        }
+      },
+      "expectations": [
+        {
+          "path": "command_type",
+          "equals": "ADD_NEW"
+        },
+        {
+          "path": "entity_resolution.primary_person.name",
+          "equals": "Hana"
+        },
+        {
+          "path": "entity_resolution.primary_person.is_new",
+          "equals": true
+        },
+        {
+          "path": "facts[0].category",
+          "equals": "professional"
+        },
+        {
+          "path": "facts[0].content",
+          "contains": "playground"
+        }
+      ]
+    },
+    {
+      "name": "add_new_person_038",
+      "description": "Create new person record for Callum",
+      "request": {
+        "user_input": "Met Callum who invests in sustainable timber.",
+        "command_type": "ADD_NEW",
+        "context": {
+          "matching_entities": [],
+          "related_entities": [],
+          "recent_interactions": [],
+          "existing_facts": [],
+          "existing_relationships": []
+        }
+      },
+      "expectations": [
+        {
+          "path": "command_type",
+          "equals": "ADD_NEW"
+        },
+        {
+          "path": "entity_resolution.primary_person.name",
+          "equals": "Callum"
+        },
+        {
+          "path": "entity_resolution.primary_person.is_new",
+          "equals": true
+        },
+        {
+          "path": "facts[0].category",
+          "equals": "professional"
+        },
+        {
+          "path": "facts[0].content",
+          "contains": "timber"
+        }
+      ]
+    },
+    {
+      "name": "add_new_person_039",
+      "description": "Create new person record for Esme",
+      "request": {
+        "user_input": "Met Esme who hosts a weekly philosophy salon.",
+        "command_type": "ADD_NEW",
+        "context": {
+          "matching_entities": [],
+          "related_entities": [],
+          "recent_interactions": [],
+          "existing_facts": [],
+          "existing_relationships": []
+        }
+      },
+      "expectations": [
+        {
+          "path": "command_type",
+          "equals": "ADD_NEW"
+        },
+        {
+          "path": "entity_resolution.primary_person.name",
+          "equals": "Esme"
+        },
+        {
+          "path": "entity_resolution.primary_person.is_new",
+          "equals": true
+        },
+        {
+          "path": "facts[0].category",
+          "equals": "activity"
+        },
+        {
+          "path": "facts[0].content",
+          "contains": "salon"
+        }
+      ]
+    },
+    {
+      "name": "add_new_person_040",
+      "description": "Create new person record for Tycho",
+      "request": {
+        "user_input": "Met Tycho who is obsessed with single-origin chocolate.",
+        "command_type": "ADD_NEW",
+        "context": {
+          "matching_entities": [],
+          "related_entities": [],
+          "recent_interactions": [],
+          "existing_facts": [],
+          "existing_relationships": []
+        }
+      },
+      "expectations": [
+        {
+          "path": "command_type",
+          "equals": "ADD_NEW"
+        },
+        {
+          "path": "entity_resolution.primary_person.name",
+          "equals": "Tycho"
+        },
+        {
+          "path": "entity_resolution.primary_person.is_new",
+          "equals": true
+        },
+        {
+          "path": "facts[0].category",
+          "equals": "preference"
+        },
+        {
+          "path": "facts[0].content",
+          "contains": "chocolate"
+        }
+      ]
+    },
+    {
+      "name": "add_info_001",
+      "description": "Add info for existing person Julie",
+      "request": {
+        "user_input": "Julie prefers cold brew coffee.",
+        "command_type": "ADD_INFO",
+        "context": {
+          "matching_entities": [
+            {
+              "id": "Person_julie_001",
+              "name": "Julie"
+            }
+          ],
+          "related_entities": [],
+          "recent_interactions": [],
+          "existing_facts": [
+            {
+              "id": "fact_julie_baseline",
+              "content": "placeholder"
+            }
+          ],
+          "existing_relationships": []
+        }
+      },
+      "expectations": [
+        {
+          "path": "command_type",
+          "equals": "ADD_INFO"
+        },
+        {
+          "path": "entity_resolution.primary_person.matched_entity_id",
+          "equals": "Person_julie_001"
+        },
+        {
+          "path": "facts[0].category",
+          "equals": "preference"
+        },
+        {
+          "path": "facts[0].content",
+          "contains": "cold brew"
+        }
+      ]
+    },
+    {
+      "name": "add_info_002",
+      "description": "Add info for existing person Malik",
+      "request": {
+        "user_input": "Malik loves Ethiopian food.",
+        "command_type": "ADD_INFO",
+        "context": {
+          "matching_entities": [
+            {
+              "id": "Person_malik_002",
+              "name": "Malik"
+            }
+          ],
+          "related_entities": [],
+          "recent_interactions": [],
+          "existing_facts": [
+            {
+              "id": "fact_malik_baseline",
+              "content": "placeholder"
+            }
+          ],
+          "existing_relationships": []
+        }
+      },
+      "expectations": [
+        {
+          "path": "command_type",
+          "equals": "ADD_INFO"
+        },
+        {
+          "path": "entity_resolution.primary_person.matched_entity_id",
+          "equals": "Person_malik_002"
+        },
+        {
+          "path": "facts[0].category",
+          "equals": "preference"
+        },
+        {
+          "path": "facts[0].content",
+          "contains": "Ethiopian"
+        }
+      ]
+    },
+    {
+      "name": "add_info_003",
+      "description": "Add info for existing person Sonia",
+      "request": {
+        "user_input": "Sonia is allergic to cats.",
+        "command_type": "ADD_INFO",
+        "context": {
+          "matching_entities": [
+            {
+              "id": "Person_sonia_003",
+              "name": "Sonia"
+            }
+          ],
+          "related_entities": [],
+          "recent_interactions": [],
+          "existing_facts": [
+            {
+              "id": "fact_sonia_baseline",
+              "content": "placeholder"
+            }
+          ],
+          "existing_relationships": []
+        }
+      },
+      "expectations": [
+        {
+          "path": "command_type",
+          "equals": "ADD_INFO"
+        },
+        {
+          "path": "entity_resolution.primary_person.matched_entity_id",
+          "equals": "Person_sonia_003"
+        },
+        {
+          "path": "facts[0].category",
+          "equals": "personal"
+        },
+        {
+          "path": "facts[0].content",
+          "contains": "allergic to cats"
+        }
+      ]
+    },
+    {
+      "name": "add_info_004",
+      "description": "Add info for existing person Hugo",
+      "request": {
+        "user_input": "Hugo collects rare teas.",
+        "command_type": "ADD_INFO",
+        "context": {
+          "matching_entities": [
+            {
+              "id": "Person_hugo_004",
+              "name": "Hugo"
+            }
+          ],
+          "related_entities": [],
+          "recent_interactions": [],
+          "existing_facts": [
+            {
+              "id": "fact_hugo_baseline",
+              "content": "placeholder"
+            }
+          ],
+          "existing_relationships": []
+        }
+      },
+      "expectations": [
+        {
+          "path": "command_type",
+          "equals": "ADD_INFO"
+        },
+        {
+          "path": "entity_resolution.primary_person.matched_entity_id",
+          "equals": "Person_hugo_004"
+        },
+        {
+          "path": "facts[0].category",
+          "equals": "possession"
+        },
+        {
+          "path": "facts[0].content",
+          "contains": "teas"
+        }
+      ]
+    },
+    {
+      "name": "add_info_005",
+      "description": "Add info for existing person Bianca",
+      "request": {
+        "user_input": "Bianca commutes by folding bike.",
+        "command_type": "ADD_INFO",
+        "context": {
+          "matching_entities": [
+            {
+              "id": "Person_bianca_005",
+              "name": "Bianca"
+            }
+          ],
+          "related_entities": [],
+          "recent_interactions": [],
+          "existing_facts": [
+            {
+              "id": "fact_bianca_baseline",
+              "content": "placeholder"
+            }
+          ],
+          "existing_relationships": []
+        }
+      },
+      "expectations": [
+        {
+          "path": "command_type",
+          "equals": "ADD_INFO"
+        },
+        {
+          "path": "entity_resolution.primary_person.matched_entity_id",
+          "equals": "Person_bianca_005"
+        },
+        {
+          "path": "facts[0].category",
+          "equals": "activity"
+        },
+        {
+          "path": "facts[0].content",
+          "contains": "bike"
+        }
+      ]
+    },
+    {
+      "name": "add_info_006",
+      "description": "Add info for existing person Rafael",
+      "request": {
+        "user_input": "Rafael volunteers at an animal shelter.",
+        "command_type": "ADD_INFO",
+        "context": {
+          "matching_entities": [
+            {
+              "id": "Person_rafael_006",
+              "name": "Rafael"
+            }
+          ],
+          "related_entities": [],
+          "recent_interactions": [],
+          "existing_facts": [
+            {
+              "id": "fact_rafael_baseline",
+              "content": "placeholder"
+            }
+          ],
+          "existing_relationships": []
+        }
+      },
+      "expectations": [
+        {
+          "path": "command_type",
+          "equals": "ADD_INFO"
+        },
+        {
+          "path": "entity_resolution.primary_person.matched_entity_id",
+          "equals": "Person_rafael_006"
+        },
+        {
+          "path": "facts[0].category",
+          "equals": "activity"
+        },
+        {
+          "path": "facts[0].content",
+          "contains": "shelter"
+        }
+      ]
+    },
+    {
+      "name": "add_info_007",
+      "description": "Add info for existing person Camila",
+      "request": {
+        "user_input": "Camila prefers minimalist design.",
+        "command_type": "ADD_INFO",
+        "context": {
+          "matching_entities": [
+            {
+              "id": "Person_camila_007",
+              "name": "Camila"
+            }
+          ],
+          "related_entities": [],
+          "recent_interactions": [],
+          "existing_facts": [
+            {
+              "id": "fact_camila_baseline",
+              "content": "placeholder"
+            }
+          ],
+          "existing_relationships": []
+        }
+      },
+      "expectations": [
+        {
+          "path": "command_type",
+          "equals": "ADD_INFO"
+        },
+        {
+          "path": "entity_resolution.primary_person.matched_entity_id",
+          "equals": "Person_camila_007"
+        },
+        {
+          "path": "facts[0].category",
+          "equals": "preference"
+        },
+        {
+          "path": "facts[0].content",
+          "contains": "minimalist"
+        }
+      ]
+    },
+    {
+      "name": "add_info_008",
+      "description": "Add info for existing person Anders",
+      "request": {
+        "user_input": "Anders only drinks sparkling water.",
+        "command_type": "ADD_INFO",
+        "context": {
+          "matching_entities": [
+            {
+              "id": "Person_anders_008",
+              "name": "Anders"
+            }
+          ],
+          "related_entities": [],
+          "recent_interactions": [],
+          "existing_facts": [
+            {
+              "id": "fact_anders_baseline",
+              "content": "placeholder"
+            }
+          ],
+          "existing_relationships": []
+        }
+      },
+      "expectations": [
+        {
+          "path": "command_type",
+          "equals": "ADD_INFO"
+        },
+        {
+          "path": "entity_resolution.primary_person.matched_entity_id",
+          "equals": "Person_anders_008"
+        },
+        {
+          "path": "facts[0].category",
+          "equals": "preference"
+        },
+        {
+          "path": "facts[0].content",
+          "contains": "sparkling"
+        }
+      ]
+    },
+    {
+      "name": "add_info_009",
+      "description": "Add info for existing person Nico",
+      "request": {
+        "user_input": "Nico hosts a jazz night.",
+        "command_type": "ADD_INFO",
+        "context": {
+          "matching_entities": [
+            {
+              "id": "Person_nico_009",
+              "name": "Nico"
+            }
+          ],
+          "related_entities": [],
+          "recent_interactions": [],
+          "existing_facts": [
+            {
+              "id": "fact_nico_baseline",
+              "content": "placeholder"
+            }
+          ],
+          "existing_relationships": []
+        }
+      },
+      "expectations": [
+        {
+          "path": "command_type",
+          "equals": "ADD_INFO"
+        },
+        {
+          "path": "entity_resolution.primary_person.matched_entity_id",
+          "equals": "Person_nico_009"
+        },
+        {
+          "path": "facts[0].category",
+          "equals": "activity"
+        },
+        {
+          "path": "facts[0].content",
+          "contains": "jazz"
+        }
+      ]
+    },
+    {
+      "name": "add_info_010",
+      "description": "Add info for existing person Aria",
+      "request": {
+        "user_input": "Aria is vegan.",
+        "command_type": "ADD_INFO",
+        "context": {
+          "matching_entities": [
+            {
+              "id": "Person_aria_010",
+              "name": "Aria"
+            }
+          ],
+          "related_entities": [],
+          "recent_interactions": [],
+          "existing_facts": [
+            {
+              "id": "fact_aria_baseline",
+              "content": "placeholder"
+            }
+          ],
+          "existing_relationships": []
+        }
+      },
+      "expectations": [
+        {
+          "path": "command_type",
+          "equals": "ADD_INFO"
+        },
+        {
+          "path": "entity_resolution.primary_person.matched_entity_id",
+          "equals": "Person_aria_010"
+        },
+        {
+          "path": "facts[0].category",
+          "equals": "preference"
+        },
+        {
+          "path": "facts[0].content",
+          "contains": "vegan"
+        }
+      ]
+    },
+    {
+      "name": "add_info_011",
+      "description": "Add info for existing person Glen",
+      "request": {
+        "user_input": "Glen restores pocket watches.",
+        "command_type": "ADD_INFO",
+        "context": {
+          "matching_entities": [
+            {
+              "id": "Person_glen_011",
+              "name": "Glen"
+            }
+          ],
+          "related_entities": [],
+          "recent_interactions": [],
+          "existing_facts": [
+            {
+              "id": "fact_glen_baseline",
+              "content": "placeholder"
+            }
+          ],
+          "existing_relationships": []
+        }
+      },
+      "expectations": [
+        {
+          "path": "command_type",
+          "equals": "ADD_INFO"
+        },
+        {
+          "path": "entity_resolution.primary_person.matched_entity_id",
+          "equals": "Person_glen_011"
+        },
+        {
+          "path": "facts[0].category",
+          "equals": "activity"
+        },
+        {
+          "path": "facts[0].content",
+          "contains": "watches"
+        }
+      ]
+    },
+    {
+      "name": "add_info_012",
+      "description": "Add info for existing person Lucia",
+      "request": {
+        "user_input": "Lucia paints botanical scenes.",
+        "command_type": "ADD_INFO",
+        "context": {
+          "matching_entities": [
+            {
+              "id": "Person_lucia_012",
+              "name": "Lucia"
+            }
+          ],
+          "related_entities": [],
+          "recent_interactions": [],
+          "existing_facts": [
+            {
+              "id": "fact_lucia_baseline",
+              "content": "placeholder"
+            }
+          ],
+          "existing_relationships": []
+        }
+      },
+      "expectations": [
+        {
+          "path": "command_type",
+          "equals": "ADD_INFO"
+        },
+        {
+          "path": "entity_resolution.primary_person.matched_entity_id",
+          "equals": "Person_lucia_012"
+        },
+        {
+          "path": "facts[0].category",
+          "equals": "activity"
+        },
+        {
+          "path": "facts[0].content",
+          "contains": "botanical"
+        }
+      ]
+    },
+    {
+      "name": "add_info_013",
+      "description": "Add info for existing person Keiko",
+      "request": {
+        "user_input": "Keiko avoids gluten.",
+        "command_type": "ADD_INFO",
+        "context": {
+          "matching_entities": [
+            {
+              "id": "Person_keiko_013",
+              "name": "Keiko"
+            }
+          ],
+          "related_entities": [],
+          "recent_interactions": [],
+          "existing_facts": [
+            {
+              "id": "fact_keiko_baseline",
+              "content": "placeholder"
+            }
+          ],
+          "existing_relationships": []
+        }
+      },
+      "expectations": [
+        {
+          "path": "command_type",
+          "equals": "ADD_INFO"
+        },
+        {
+          "path": "entity_resolution.primary_person.matched_entity_id",
+          "equals": "Person_keiko_013"
+        },
+        {
+          "path": "facts[0].category",
+          "equals": "personal"
+        },
+        {
+          "path": "facts[0].content",
+          "contains": "gluten"
+        }
+      ]
+    },
+    {
+      "name": "add_info_014",
+      "description": "Add info for existing person Jared",
+      "request": {
+        "user_input": "Jared prefers handwritten notes.",
+        "command_type": "ADD_INFO",
+        "context": {
+          "matching_entities": [
+            {
+              "id": "Person_jared_014",
+              "name": "Jared"
+            }
+          ],
+          "related_entities": [],
+          "recent_interactions": [],
+          "existing_facts": [
+            {
+              "id": "fact_jared_baseline",
+              "content": "placeholder"
+            }
+          ],
+          "existing_relationships": []
+        }
+      },
+      "expectations": [
+        {
+          "path": "command_type",
+          "equals": "ADD_INFO"
+        },
+        {
+          "path": "entity_resolution.primary_person.matched_entity_id",
+          "equals": "Person_jared_014"
+        },
+        {
+          "path": "facts[0].category",
+          "equals": "preference"
+        },
+        {
+          "path": "facts[0].content",
+          "contains": "handwritten"
+        }
+      ]
+    },
+    {
+      "name": "add_info_015",
+      "description": "Add info for existing person Farah",
+      "request": {
+        "user_input": "Farah collects bonsai trees.",
+        "command_type": "ADD_INFO",
+        "context": {
+          "matching_entities": [
+            {
+              "id": "Person_farah_015",
+              "name": "Farah"
+            }
+          ],
+          "related_entities": [],
+          "recent_interactions": [],
+          "existing_facts": [
+            {
+              "id": "fact_farah_baseline",
+              "content": "placeholder"
+            }
+          ],
+          "existing_relationships": []
+        }
+      },
+      "expectations": [
+        {
+          "path": "command_type",
+          "equals": "ADD_INFO"
+        },
+        {
+          "path": "entity_resolution.primary_person.matched_entity_id",
+          "equals": "Person_farah_015"
+        },
+        {
+          "path": "facts[0].category",
+          "equals": "possession"
+        },
+        {
+          "path": "facts[0].content",
+          "contains": "bonsai"
+        }
+      ]
+    },
+    {
+      "name": "add_info_016",
+      "description": "Add info for existing person Diego",
+      "request": {
+        "user_input": "Diego is learning sign language.",
+        "command_type": "ADD_INFO",
+        "context": {
+          "matching_entities": [
+            {
+              "id": "Person_diego_016",
+              "name": "Diego"
+            }
+          ],
+          "related_entities": [],
+          "recent_interactions": [],
+          "existing_facts": [
+            {
+              "id": "fact_diego_baseline",
+              "content": "placeholder"
+            }
+          ],
+          "existing_relationships": []
+        }
+      },
+      "expectations": [
+        {
+          "path": "command_type",
+          "equals": "ADD_INFO"
+        },
+        {
+          "path": "entity_resolution.primary_person.matched_entity_id",
+          "equals": "Person_diego_016"
+        },
+        {
+          "path": "facts[0].category",
+          "equals": "activity"
+        },
+        {
+          "path": "facts[0].content",
+          "contains": "sign language"
+        }
+      ]
+    },
+    {
+      "name": "add_info_017",
+      "description": "Add info for existing person Hazel",
+      "request": {
+        "user_input": "Hazel loves indie board games.",
+        "command_type": "ADD_INFO",
+        "context": {
+          "matching_entities": [
+            {
+              "id": "Person_hazel_017",
+              "name": "Hazel"
+            }
+          ],
+          "related_entities": [],
+          "recent_interactions": [],
+          "existing_facts": [
+            {
+              "id": "fact_hazel_baseline",
+              "content": "placeholder"
+            }
+          ],
+          "existing_relationships": []
+        }
+      },
+      "expectations": [
+        {
+          "path": "command_type",
+          "equals": "ADD_INFO"
+        },
+        {
+          "path": "entity_resolution.primary_person.matched_entity_id",
+          "equals": "Person_hazel_017"
+        },
+        {
+          "path": "facts[0].category",
+          "equals": "preference"
+        },
+        {
+          "path": "facts[0].content",
+          "contains": "board games"
+        }
+      ]
+    },
+    {
+      "name": "add_info_018",
+      "description": "Add info for existing person Ibrahim",
+      "request": {
+        "user_input": "Ibrahim keeps a saltwater aquarium.",
+        "command_type": "ADD_INFO",
+        "context": {
+          "matching_entities": [
+            {
+              "id": "Person_ibrahim_018",
+              "name": "Ibrahim"
+            }
+          ],
+          "related_entities": [],
+          "recent_interactions": [],
+          "existing_facts": [
+            {
+              "id": "fact_ibrahim_baseline",
+              "content": "placeholder"
+            }
+          ],
+          "existing_relationships": []
+        }
+      },
+      "expectations": [
+        {
+          "path": "command_type",
+          "equals": "ADD_INFO"
+        },
+        {
+          "path": "entity_resolution.primary_person.matched_entity_id",
+          "equals": "Person_ibrahim_018"
+        },
+        {
+          "path": "facts[0].category",
+          "equals": "possession"
+        },
+        {
+          "path": "facts[0].content",
+          "contains": "aquarium"
+        }
+      ]
+    },
+    {
+      "name": "add_info_019",
+      "description": "Add info for existing person Mina",
+      "request": {
+        "user_input": "Mina uses a standing desk.",
+        "command_type": "ADD_INFO",
+        "context": {
+          "matching_entities": [
+            {
+              "id": "Person_mina_019",
+              "name": "Mina"
+            }
+          ],
+          "related_entities": [],
+          "recent_interactions": [],
+          "existing_facts": [
+            {
+              "id": "fact_mina_baseline",
+              "content": "placeholder"
+            }
+          ],
+          "existing_relationships": []
+        }
+      },
+      "expectations": [
+        {
+          "path": "command_type",
+          "equals": "ADD_INFO"
+        },
+        {
+          "path": "entity_resolution.primary_person.matched_entity_id",
+          "equals": "Person_mina_019"
+        },
+        {
+          "path": "facts[0].category",
+          "equals": "preference"
+        },
+        {
+          "path": "facts[0].content",
+          "contains": "standing desk"
+        }
+      ]
+    },
+    {
+      "name": "add_info_020",
+      "description": "Add info for existing person Noelle",
+      "request": {
+        "user_input": "Noelle bakes sourdough.",
+        "command_type": "ADD_INFO",
+        "context": {
+          "matching_entities": [
+            {
+              "id": "Person_noelle_020",
+              "name": "Noelle"
+            }
+          ],
+          "related_entities": [],
+          "recent_interactions": [],
+          "existing_facts": [
+            {
+              "id": "fact_noelle_baseline",
+              "content": "placeholder"
+            }
+          ],
+          "existing_relationships": []
+        }
+      },
+      "expectations": [
+        {
+          "path": "command_type",
+          "equals": "ADD_INFO"
+        },
+        {
+          "path": "entity_resolution.primary_person.matched_entity_id",
+          "equals": "Person_noelle_020"
+        },
+        {
+          "path": "facts[0].category",
+          "equals": "activity"
+        },
+        {
+          "path": "facts[0].content",
+          "contains": "sourdough"
+        }
+      ]
+    },
+    {
+      "name": "add_info_021",
+      "description": "Add info for existing person Omar",
+      "request": {
+        "user_input": "Omar prefers waterproof notebooks.",
+        "command_type": "ADD_INFO",
+        "context": {
+          "matching_entities": [
+            {
+              "id": "Person_omar_021",
+              "name": "Omar"
+            }
+          ],
+          "related_entities": [],
+          "recent_interactions": [],
+          "existing_facts": [
+            {
+              "id": "fact_omar_baseline",
+              "content": "placeholder"
+            }
+          ],
+          "existing_relationships": []
+        }
+      },
+      "expectations": [
+        {
+          "path": "command_type",
+          "equals": "ADD_INFO"
+        },
+        {
+          "path": "entity_resolution.primary_person.matched_entity_id",
+          "equals": "Person_omar_021"
+        },
+        {
+          "path": "facts[0].category",
+          "equals": "preference"
+        },
+        {
+          "path": "facts[0].content",
+          "contains": "waterproof"
+        }
+      ]
+    },
+    {
+      "name": "add_info_022",
+      "description": "Add info for existing person Petra",
+      "request": {
+        "user_input": "Petra travels by cargo bike.",
+        "command_type": "ADD_INFO",
+        "context": {
+          "matching_entities": [
+            {
+              "id": "Person_petra_022",
+              "name": "Petra"
+            }
+          ],
+          "related_entities": [],
+          "recent_interactions": [],
+          "existing_facts": [
+            {
+              "id": "fact_petra_baseline",
+              "content": "placeholder"
+            }
+          ],
+          "existing_relationships": []
+        }
+      },
+      "expectations": [
+        {
+          "path": "command_type",
+          "equals": "ADD_INFO"
+        },
+        {
+          "path": "entity_resolution.primary_person.matched_entity_id",
+          "equals": "Person_petra_022"
+        },
+        {
+          "path": "facts[0].category",
+          "equals": "activity"
+        },
+        {
+          "path": "facts[0].content",
+          "contains": "cargo"
+        }
+      ]
+    },
+    {
+      "name": "add_info_023",
+      "description": "Add info for existing person Quentin",
+      "request": {
+        "user_input": "Quentin wears noise-canceling earbuds.",
+        "command_type": "ADD_INFO",
+        "context": {
+          "matching_entities": [
+            {
+              "id": "Person_quentin_023",
+              "name": "Quentin"
+            }
+          ],
+          "related_entities": [],
+          "recent_interactions": [],
+          "existing_facts": [
+            {
+              "id": "fact_quentin_baseline",
+              "content": "placeholder"
+            }
+          ],
+          "existing_relationships": []
+        }
+      },
+      "expectations": [
+        {
+          "path": "command_type",
+          "equals": "ADD_INFO"
+        },
+        {
+          "path": "entity_resolution.primary_person.matched_entity_id",
+          "equals": "Person_quentin_023"
+        },
+        {
+          "path": "facts[0].category",
+          "equals": "preference"
+        },
+        {
+          "path": "facts[0].content",
+          "contains": "earbuds"
+        }
+      ]
+    },
+    {
+      "name": "add_info_024",
+      "description": "Add info for existing person Rosa",
+      "request": {
+        "user_input": "Rosa collects fountain pens.",
+        "command_type": "ADD_INFO",
+        "context": {
+          "matching_entities": [
+            {
+              "id": "Person_rosa_024",
+              "name": "Rosa"
+            }
+          ],
+          "related_entities": [],
+          "recent_interactions": [],
+          "existing_facts": [
+            {
+              "id": "fact_rosa_baseline",
+              "content": "placeholder"
+            }
+          ],
+          "existing_relationships": []
+        }
+      },
+      "expectations": [
+        {
+          "path": "command_type",
+          "equals": "ADD_INFO"
+        },
+        {
+          "path": "entity_resolution.primary_person.matched_entity_id",
+          "equals": "Person_rosa_024"
+        },
+        {
+          "path": "facts[0].category",
+          "equals": "possession"
+        },
+        {
+          "path": "facts[0].content",
+          "contains": "pens"
+        }
+      ]
+    },
+    {
+      "name": "add_info_025",
+      "description": "Add info for existing person Stefan",
+      "request": {
+        "user_input": "Stefan is lactose intolerant.",
+        "command_type": "ADD_INFO",
+        "context": {
+          "matching_entities": [
+            {
+              "id": "Person_stefan_025",
+              "name": "Stefan"
+            }
+          ],
+          "related_entities": [],
+          "recent_interactions": [],
+          "existing_facts": [
+            {
+              "id": "fact_stefan_baseline",
+              "content": "placeholder"
+            }
+          ],
+          "existing_relationships": []
+        }
+      },
+      "expectations": [
+        {
+          "path": "command_type",
+          "equals": "ADD_INFO"
+        },
+        {
+          "path": "entity_resolution.primary_person.matched_entity_id",
+          "equals": "Person_stefan_025"
+        },
+        {
+          "path": "facts[0].category",
+          "equals": "personal"
+        },
+        {
+          "path": "facts[0].content",
+          "contains": "lactose"
+        }
+      ]
+    },
+    {
+      "name": "update_fact_001",
+      "description": "Update fact for Julie",
+      "request": {
+        "user_input": "Correction: Julie prefers chai now.",
+        "command_type": "UPDATE",
+        "context": {
+          "matching_entities": [
+            {
+              "id": "Person_julie_001",
+              "name": "Julie"
+            }
+          ],
+          "related_entities": [],
+          "recent_interactions": [],
+          "existing_facts": [
+            {
+              "id": "fact_julie_pref",
+              "content": "outdated info",
+              "category": "preference"
+            }
+          ],
+          "existing_relationships": []
+        }
+      },
+      "expectations": [
+        {
+          "path": "command_type",
+          "equals": "UPDATE"
+        },
+        {
+          "path": "facts[0].fact_type",
+          "equals": "correction"
+        },
+        {
+          "path": "facts[0].replaces_fact_id",
+          "equals": "fact_julie_pref"
+        },
+        {
+          "path": "facts[0].content",
+          "contains": "prefers chai"
+        },
+        {
+          "path": "fact_updates[0].update_type",
+          "equals": "correction"
+        }
+      ]
+    },
+    {
+      "name": "update_fact_002",
+      "description": "Update fact for Malik",
+      "request": {
+        "user_input": "Correction: Malik avoids dairy now.",
+        "command_type": "UPDATE",
+        "context": {
+          "matching_entities": [
+            {
+              "id": "Person_malik_002",
+              "name": "Malik"
+            }
+          ],
+          "related_entities": [],
+          "recent_interactions": [],
+          "existing_facts": [
+            {
+              "id": "fact_malik_diet",
+              "content": "outdated info",
+              "category": "personal"
+            }
+          ],
+          "existing_relationships": []
+        }
+      },
+      "expectations": [
+        {
+          "path": "command_type",
+          "equals": "UPDATE"
+        },
+        {
+          "path": "facts[0].fact_type",
+          "equals": "correction"
+        },
+        {
+          "path": "facts[0].replaces_fact_id",
+          "equals": "fact_malik_diet"
+        },
+        {
+          "path": "facts[0].content",
+          "contains": "avoids dairy"
+        },
+        {
+          "path": "fact_updates[0].update_type",
+          "equals": "correction"
+        }
+      ]
+    },
+    {
+      "name": "update_fact_003",
+      "description": "Update fact for Sonia",
+      "request": {
+        "user_input": "Correction: Sonia actually likes cats.",
+        "command_type": "UPDATE",
+        "context": {
+          "matching_entities": [
+            {
+              "id": "Person_sonia_003",
+              "name": "Sonia"
+            }
+          ],
+          "related_entities": [],
+          "recent_interactions": [],
+          "existing_facts": [
+            {
+              "id": "fact_sonia_pet",
+              "content": "outdated info",
+              "category": "personal"
+            }
+          ],
+          "existing_relationships": []
+        }
+      },
+      "expectations": [
+        {
+          "path": "command_type",
+          "equals": "UPDATE"
+        },
+        {
+          "path": "facts[0].fact_type",
+          "equals": "correction"
+        },
+        {
+          "path": "facts[0].replaces_fact_id",
+          "equals": "fact_sonia_pet"
+        },
+        {
+          "path": "facts[0].content",
+          "contains": "likes cats"
+        },
+        {
+          "path": "fact_updates[0].update_type",
+          "equals": "correction"
+        }
+      ]
+    },
+    {
+      "name": "update_fact_004",
+      "description": "Update fact for Hugo",
+      "request": {
+        "user_input": "Correction: Hugo focuses on oolong teas.",
+        "command_type": "UPDATE",
+        "context": {
+          "matching_entities": [
+            {
+              "id": "Person_hugo_004",
+              "name": "Hugo"
+            }
+          ],
+          "related_entities": [],
+          "recent_interactions": [],
+          "existing_facts": [
+            {
+              "id": "fact_hugo_collection",
+              "content": "outdated info",
+              "category": "possession"
+            }
+          ],
+          "existing_relationships": []
+        }
+      },
+      "expectations": [
+        {
+          "path": "command_type",
+          "equals": "UPDATE"
+        },
+        {
+          "path": "facts[0].fact_type",
+          "equals": "correction"
+        },
+        {
+          "path": "facts[0].replaces_fact_id",
+          "equals": "fact_hugo_collection"
+        },
+        {
+          "path": "facts[0].content",
+          "contains": "oolong"
+        },
+        {
+          "path": "fact_updates[0].update_type",
+          "equals": "correction"
+        }
+      ]
+    },
+    {
+      "name": "update_fact_005",
+      "description": "Update fact for Bianca",
+      "request": {
+        "user_input": "Correction: Bianca now takes the ferry.",
+        "command_type": "UPDATE",
+        "context": {
+          "matching_entities": [
+            {
+              "id": "Person_bianca_005",
+              "name": "Bianca"
+            }
+          ],
+          "related_entities": [],
+          "recent_interactions": [],
+          "existing_facts": [
+            {
+              "id": "fact_bianca_commute",
+              "content": "outdated info",
+              "category": "activity"
+            }
+          ],
+          "existing_relationships": []
+        }
+      },
+      "expectations": [
+        {
+          "path": "command_type",
+          "equals": "UPDATE"
+        },
+        {
+          "path": "facts[0].fact_type",
+          "equals": "correction"
+        },
+        {
+          "path": "facts[0].replaces_fact_id",
+          "equals": "fact_bianca_commute"
+        },
+        {
+          "path": "facts[0].content",
+          "contains": "ferry"
+        },
+        {
+          "path": "fact_updates[0].update_type",
+          "equals": "correction"
+        }
+      ]
+    },
+    {
+      "name": "update_fact_006",
+      "description": "Update fact for Rafael",
+      "request": {
+        "user_input": "Correction: Rafael shifts to marine rescue.",
+        "command_type": "UPDATE",
+        "context": {
+          "matching_entities": [
+            {
+              "id": "Person_rafael_006",
+              "name": "Rafael"
+            }
+          ],
+          "related_entities": [],
+          "recent_interactions": [],
+          "existing_facts": [
+            {
+              "id": "fact_rafael_volunteer",
+              "content": "outdated info",
+              "category": "activity"
+            }
+          ],
+          "existing_relationships": []
+        }
+      },
+      "expectations": [
+        {
+          "path": "command_type",
+          "equals": "UPDATE"
+        },
+        {
+          "path": "facts[0].fact_type",
+          "equals": "correction"
+        },
+        {
+          "path": "facts[0].replaces_fact_id",
+          "equals": "fact_rafael_volunteer"
+        },
+        {
+          "path": "facts[0].content",
+          "contains": "marine"
+        },
+        {
+          "path": "fact_updates[0].update_type",
+          "equals": "correction"
+        }
+      ]
+    },
+    {
+      "name": "update_fact_007",
+      "description": "Update fact for Camila",
+      "request": {
+        "user_input": "Correction: Camila prefers brutalist design.",
+        "command_type": "UPDATE",
+        "context": {
+          "matching_entities": [
+            {
+              "id": "Person_camila_007",
+              "name": "Camila"
+            }
+          ],
+          "related_entities": [],
+          "recent_interactions": [],
+          "existing_facts": [
+            {
+              "id": "fact_camila_design",
+              "content": "outdated info",
+              "category": "preference"
+            }
+          ],
+          "existing_relationships": []
+        }
+      },
+      "expectations": [
+        {
+          "path": "command_type",
+          "equals": "UPDATE"
+        },
+        {
+          "path": "facts[0].fact_type",
+          "equals": "correction"
+        },
+        {
+          "path": "facts[0].replaces_fact_id",
+          "equals": "fact_camila_design"
+        },
+        {
+          "path": "facts[0].content",
+          "contains": "brutalist"
+        },
+        {
+          "path": "fact_updates[0].update_type",
+          "equals": "correction"
+        }
+      ]
+    },
+    {
+      "name": "update_fact_008",
+      "description": "Update fact for Anders",
+      "request": {
+        "user_input": "Correction: Anders switched to still water.",
+        "command_type": "UPDATE",
+        "context": {
+          "matching_entities": [
+            {
+              "id": "Person_anders_008",
+              "name": "Anders"
+            }
+          ],
+          "related_entities": [],
+          "recent_interactions": [],
+          "existing_facts": [
+            {
+              "id": "fact_anders_drink",
+              "content": "outdated info",
+              "category": "preference"
+            }
+          ],
+          "existing_relationships": []
+        }
+      },
+      "expectations": [
+        {
+          "path": "command_type",
+          "equals": "UPDATE"
+        },
+        {
+          "path": "facts[0].fact_type",
+          "equals": "correction"
+        },
+        {
+          "path": "facts[0].replaces_fact_id",
+          "equals": "fact_anders_drink"
+        },
+        {
+          "path": "facts[0].content",
+          "contains": "still water"
+        },
+        {
+          "path": "fact_updates[0].update_type",
+          "equals": "correction"
+        }
+      ]
+    },
+    {
+      "name": "update_fact_009",
+      "description": "Update fact for Nico",
+      "request": {
+        "user_input": "Correction: Nico now hosts poetry night.",
+        "command_type": "UPDATE",
+        "context": {
+          "matching_entities": [
+            {
+              "id": "Person_nico_009",
+              "name": "Nico"
+            }
+          ],
+          "related_entities": [],
+          "recent_interactions": [],
+          "existing_facts": [
+            {
+              "id": "fact_nico_event",
+              "content": "outdated info",
+              "category": "activity"
+            }
+          ],
+          "existing_relationships": []
+        }
+      },
+      "expectations": [
+        {
+          "path": "command_type",
+          "equals": "UPDATE"
+        },
+        {
+          "path": "facts[0].fact_type",
+          "equals": "correction"
+        },
+        {
+          "path": "facts[0].replaces_fact_id",
+          "equals": "fact_nico_event"
+        },
+        {
+          "path": "facts[0].content",
+          "contains": "poetry"
+        },
+        {
+          "path": "fact_updates[0].update_type",
+          "equals": "correction"
+        }
+      ]
+    },
+    {
+      "name": "update_fact_010",
+      "description": "Update fact for Aria",
+      "request": {
+        "user_input": "Correction: Aria eats locally sourced fish.",
+        "command_type": "UPDATE",
+        "context": {
+          "matching_entities": [
+            {
+              "id": "Person_aria_010",
+              "name": "Aria"
+            }
+          ],
+          "related_entities": [],
+          "recent_interactions": [],
+          "existing_facts": [
+            {
+              "id": "fact_aria_diet",
+              "content": "outdated info",
+              "category": "personal"
+            }
+          ],
+          "existing_relationships": []
+        }
+      },
+      "expectations": [
+        {
+          "path": "command_type",
+          "equals": "UPDATE"
+        },
+        {
+          "path": "facts[0].fact_type",
+          "equals": "correction"
+        },
+        {
+          "path": "facts[0].replaces_fact_id",
+          "equals": "fact_aria_diet"
+        },
+        {
+          "path": "facts[0].content",
+          "contains": "fish"
+        },
+        {
+          "path": "fact_updates[0].update_type",
+          "equals": "correction"
+        }
+      ]
+    },
+    {
+      "name": "update_fact_011",
+      "description": "Update fact for Glen",
+      "request": {
+        "user_input": "Correction: Glen now restores radios.",
+        "command_type": "UPDATE",
+        "context": {
+          "matching_entities": [
+            {
+              "id": "Person_glen_011",
+              "name": "Glen"
+            }
+          ],
+          "related_entities": [],
+          "recent_interactions": [],
+          "existing_facts": [
+            {
+              "id": "fact_glen_hobby",
+              "content": "outdated info",
+              "category": "activity"
+            }
+          ],
+          "existing_relationships": []
+        }
+      },
+      "expectations": [
+        {
+          "path": "command_type",
+          "equals": "UPDATE"
+        },
+        {
+          "path": "facts[0].fact_type",
+          "equals": "correction"
+        },
+        {
+          "path": "facts[0].replaces_fact_id",
+          "equals": "fact_glen_hobby"
+        },
+        {
+          "path": "facts[0].content",
+          "contains": "radios"
+        },
+        {
+          "path": "fact_updates[0].update_type",
+          "equals": "correction"
+        }
+      ]
+    },
+    {
+      "name": "update_fact_012",
+      "description": "Update fact for Lucia",
+      "request": {
+        "user_input": "Correction: Lucia sketches architectural scenes.",
+        "command_type": "UPDATE",
+        "context": {
+          "matching_entities": [
+            {
+              "id": "Person_lucia_012",
+              "name": "Lucia"
+            }
+          ],
+          "related_entities": [],
+          "recent_interactions": [],
+          "existing_facts": [
+            {
+              "id": "fact_lucia_art",
+              "content": "outdated info",
+              "category": "activity"
+            }
+          ],
+          "existing_relationships": []
+        }
+      },
+      "expectations": [
+        {
+          "path": "command_type",
+          "equals": "UPDATE"
+        },
+        {
+          "path": "facts[0].fact_type",
+          "equals": "correction"
+        },
+        {
+          "path": "facts[0].replaces_fact_id",
+          "equals": "fact_lucia_art"
+        },
+        {
+          "path": "facts[0].content",
+          "contains": "architectural"
+        },
+        {
+          "path": "fact_updates[0].update_type",
+          "equals": "correction"
+        }
+      ]
+    },
+    {
+      "name": "update_fact_013",
+      "description": "Update fact for Keiko",
+      "request": {
+        "user_input": "Correction: Keiko can eat gluten again.",
+        "command_type": "UPDATE",
+        "context": {
+          "matching_entities": [
+            {
+              "id": "Person_keiko_013",
+              "name": "Keiko"
+            }
+          ],
+          "related_entities": [],
+          "recent_interactions": [],
+          "existing_facts": [
+            {
+              "id": "fact_keiko_diet",
+              "content": "outdated info",
+              "category": "personal"
+            }
+          ],
+          "existing_relationships": []
+        }
+      },
+      "expectations": [
+        {
+          "path": "command_type",
+          "equals": "UPDATE"
+        },
+        {
+          "path": "facts[0].fact_type",
+          "equals": "correction"
+        },
+        {
+          "path": "facts[0].replaces_fact_id",
+          "equals": "fact_keiko_diet"
+        },
+        {
+          "path": "facts[0].content",
+          "contains": "gluten"
+        },
+        {
+          "path": "fact_updates[0].update_type",
+          "equals": "correction"
+        }
+      ]
+    },
+    {
+      "name": "update_fact_014",
+      "description": "Update fact for Jared",
+      "request": {
+        "user_input": "Correction: Jared prefers typed notes now.",
+        "command_type": "UPDATE",
+        "context": {
+          "matching_entities": [
+            {
+              "id": "Person_jared_014",
+              "name": "Jared"
+            }
+          ],
+          "related_entities": [],
+          "recent_interactions": [],
+          "existing_facts": [
+            {
+              "id": "fact_jared_notes",
+              "content": "outdated info",
+              "category": "preference"
+            }
+          ],
+          "existing_relationships": []
+        }
+      },
+      "expectations": [
+        {
+          "path": "command_type",
+          "equals": "UPDATE"
+        },
+        {
+          "path": "facts[0].fact_type",
+          "equals": "correction"
+        },
+        {
+          "path": "facts[0].replaces_fact_id",
+          "equals": "fact_jared_notes"
+        },
+        {
+          "path": "facts[0].content",
+          "contains": "typed"
+        },
+        {
+          "path": "fact_updates[0].update_type",
+          "equals": "correction"
+        }
+      ]
+    },
+    {
+      "name": "update_fact_015",
+      "description": "Update fact for Farah",
+      "request": {
+        "user_input": "Correction: Farah downsized to two bonsai trees.",
+        "command_type": "UPDATE",
+        "context": {
+          "matching_entities": [
+            {
+              "id": "Person_farah_015",
+              "name": "Farah"
+            }
+          ],
+          "related_entities": [],
+          "recent_interactions": [],
+          "existing_facts": [
+            {
+              "id": "fact_farah_collection",
+              "content": "outdated info",
+              "category": "possession"
+            }
+          ],
+          "existing_relationships": []
+        }
+      },
+      "expectations": [
+        {
+          "path": "command_type",
+          "equals": "UPDATE"
+        },
+        {
+          "path": "facts[0].fact_type",
+          "equals": "correction"
+        },
+        {
+          "path": "facts[0].replaces_fact_id",
+          "equals": "fact_farah_collection"
+        },
+        {
+          "path": "facts[0].content",
+          "contains": "two bonsai"
+        },
+        {
+          "path": "fact_updates[0].update_type",
+          "equals": "correction"
+        }
+      ]
+    },
+    {
+      "name": "update_fact_016",
+      "description": "Update fact for Diego",
+      "request": {
+        "user_input": "Correction: Diego is practicing French instead.",
+        "command_type": "UPDATE",
+        "context": {
+          "matching_entities": [
+            {
+              "id": "Person_diego_016",
+              "name": "Diego"
+            }
+          ],
+          "related_entities": [],
+          "recent_interactions": [],
+          "existing_facts": [
+            {
+              "id": "fact_diego_learning",
+              "content": "outdated info",
+              "category": "activity"
+            }
+          ],
+          "existing_relationships": []
+        }
+      },
+      "expectations": [
+        {
+          "path": "command_type",
+          "equals": "UPDATE"
+        },
+        {
+          "path": "facts[0].fact_type",
+          "equals": "correction"
+        },
+        {
+          "path": "facts[0].replaces_fact_id",
+          "equals": "fact_diego_learning"
+        },
+        {
+          "path": "facts[0].content",
+          "contains": "French"
+        },
+        {
+          "path": "fact_updates[0].update_type",
+          "equals": "correction"
+        }
+      ]
+    },
+    {
+      "name": "update_fact_017",
+      "description": "Update fact for Hazel",
+      "request": {
+        "user_input": "Correction: Hazel now into escape rooms.",
+        "command_type": "UPDATE",
+        "context": {
+          "matching_entities": [
+            {
+              "id": "Person_hazel_017",
+              "name": "Hazel"
+            }
+          ],
+          "related_entities": [],
+          "recent_interactions": [],
+          "existing_facts": [
+            {
+              "id": "fact_hazel_games",
+              "content": "outdated info",
+              "category": "preference"
+            }
+          ],
+          "existing_relationships": []
+        }
+      },
+      "expectations": [
+        {
+          "path": "command_type",
+          "equals": "UPDATE"
+        },
+        {
+          "path": "facts[0].fact_type",
+          "equals": "correction"
+        },
+        {
+          "path": "facts[0].replaces_fact_id",
+          "equals": "fact_hazel_games"
+        },
+        {
+          "path": "facts[0].content",
+          "contains": "escape rooms"
+        },
+        {
+          "path": "fact_updates[0].update_type",
+          "equals": "correction"
+        }
+      ]
+    },
+    {
+      "name": "update_fact_018",
+      "description": "Update fact for Ibrahim",
+      "request": {
+        "user_input": "Correction: Ibrahim converted to freshwater tanks.",
+        "command_type": "UPDATE",
+        "context": {
+          "matching_entities": [
+            {
+              "id": "Person_ibrahim_018",
+              "name": "Ibrahim"
+            }
+          ],
+          "related_entities": [],
+          "recent_interactions": [],
+          "existing_facts": [
+            {
+              "id": "fact_ibrahim_aquarium",
+              "content": "outdated info",
+              "category": "possession"
+            }
+          ],
+          "existing_relationships": []
+        }
+      },
+      "expectations": [
+        {
+          "path": "command_type",
+          "equals": "UPDATE"
+        },
+        {
+          "path": "facts[0].fact_type",
+          "equals": "correction"
+        },
+        {
+          "path": "facts[0].replaces_fact_id",
+          "equals": "fact_ibrahim_aquarium"
+        },
+        {
+          "path": "facts[0].content",
+          "contains": "freshwater"
+        },
+        {
+          "path": "fact_updates[0].update_type",
+          "equals": "correction"
+        }
+      ]
+    },
+    {
+      "name": "update_fact_019",
+      "description": "Update fact for Mina",
+      "request": {
+        "user_input": "Correction: Mina went back to a seated desk.",
+        "command_type": "UPDATE",
+        "context": {
+          "matching_entities": [
+            {
+              "id": "Person_mina_019",
+              "name": "Mina"
+            }
+          ],
+          "related_entities": [],
+          "recent_interactions": [],
+          "existing_facts": [
+            {
+              "id": "fact_mina_workspace",
+              "content": "outdated info",
+              "category": "preference"
+            }
+          ],
+          "existing_relationships": []
+        }
+      },
+      "expectations": [
+        {
+          "path": "command_type",
+          "equals": "UPDATE"
+        },
+        {
+          "path": "facts[0].fact_type",
+          "equals": "correction"
+        },
+        {
+          "path": "facts[0].replaces_fact_id",
+          "equals": "fact_mina_workspace"
+        },
+        {
+          "path": "facts[0].content",
+          "contains": "seated desk"
+        },
+        {
+          "path": "fact_updates[0].update_type",
+          "equals": "correction"
+        }
+      ]
+    },
+    {
+      "name": "update_fact_020",
+      "description": "Update fact for Noelle",
+      "request": {
+        "user_input": "Correction: Noelle switches to gluten-free baking.",
+        "command_type": "UPDATE",
+        "context": {
+          "matching_entities": [
+            {
+              "id": "Person_noelle_020",
+              "name": "Noelle"
+            }
+          ],
+          "related_entities": [],
+          "recent_interactions": [],
+          "existing_facts": [
+            {
+              "id": "fact_noelle_baking",
+              "content": "outdated info",
+              "category": "activity"
+            }
+          ],
+          "existing_relationships": []
+        }
+      },
+      "expectations": [
+        {
+          "path": "command_type",
+          "equals": "UPDATE"
+        },
+        {
+          "path": "facts[0].fact_type",
+          "equals": "correction"
+        },
+        {
+          "path": "facts[0].replaces_fact_id",
+          "equals": "fact_noelle_baking"
+        },
+        {
+          "path": "facts[0].content",
+          "contains": "gluten-free"
+        },
+        {
+          "path": "fact_updates[0].update_type",
+          "equals": "correction"
+        }
+      ]
+    },
+    {
+      "name": "merge_001",
+      "description": "Merge duplicate records for Sarah Liao",
+      "request": {
+        "user_input": "Please keep Sarah Liao as the primary record and merge duplicate entry Sara L..",
+        "command_type": "MERGE",
+        "context": {
+          "matching_entities": [
+            {
+              "id": "Person_sarahliao_main",
+              "name": "Sarah Liao"
+            },
+            {
+              "id": "Person_sarahliao_dup",
+              "name": "Sara L."
+            }
+          ],
+          "related_entities": [],
+          "recent_interactions": [],
+          "existing_facts": [],
+          "existing_relationships": []
+        }
+      },
+      "expectations": [
+        {
+          "path": "command_type",
+          "equals": "MERGE"
+        },
+        {
+          "path": "entity_merges[0].primary_entity_id",
+          "equals": "Person_sarahliao_main"
+        },
+        {
+          "path": "entity_merges[0].duplicate_entity_id",
+          "equals": "Person_sarahliao_dup"
+        }
+      ]
+    },
+    {
+      "name": "merge_002",
+      "description": "Merge duplicate records for Daniel Cho",
+      "request": {
+        "user_input": "Please keep Daniel Cho as the primary record and merge duplicate entry Dan Cho.",
+        "command_type": "MERGE",
+        "context": {
+          "matching_entities": [
+            {
+              "id": "Person_danielcho_main",
+              "name": "Daniel Cho"
+            },
+            {
+              "id": "Person_dancho_dup",
+              "name": "Dan Cho"
+            }
+          ],
+          "related_entities": [],
+          "recent_interactions": [],
+          "existing_facts": [],
+          "existing_relationships": []
+        }
+      },
+      "expectations": [
+        {
+          "path": "command_type",
+          "equals": "MERGE"
+        },
+        {
+          "path": "entity_merges[0].primary_entity_id",
+          "equals": "Person_danielcho_main"
+        },
+        {
+          "path": "entity_merges[0].duplicate_entity_id",
+          "equals": "Person_dancho_dup"
+        }
+      ]
+    },
+    {
+      "name": "merge_003",
+      "description": "Merge duplicate records for Helena Ortiz",
+      "request": {
+        "user_input": "Please keep Helena Ortiz as the primary record and merge duplicate entry Helene Ortiz.",
+        "command_type": "MERGE",
+        "context": {
+          "matching_entities": [
+            {
+              "id": "Person_helena_main",
+              "name": "Helena Ortiz"
+            },
+            {
+              "id": "Person_helene_dup",
+              "name": "Helene Ortiz"
+            }
+          ],
+          "related_entities": [],
+          "recent_interactions": [],
+          "existing_facts": [],
+          "existing_relationships": []
+        }
+      },
+      "expectations": [
+        {
+          "path": "command_type",
+          "equals": "MERGE"
+        },
+        {
+          "path": "entity_merges[0].primary_entity_id",
+          "equals": "Person_helena_main"
+        },
+        {
+          "path": "entity_merges[0].duplicate_entity_id",
+          "equals": "Person_helene_dup"
+        }
+      ]
+    },
+    {
+      "name": "merge_004",
+      "description": "Merge duplicate records for Marcus Yi",
+      "request": {
+        "user_input": "Please keep Marcus Yi as the primary record and merge duplicate entry Marc Yi.",
+        "command_type": "MERGE",
+        "context": {
+          "matching_entities": [
+            {
+              "id": "Person_marcusyi_main",
+              "name": "Marcus Yi"
+            },
+            {
+              "id": "Person_marcyi_dup",
+              "name": "Marc Yi"
+            }
+          ],
+          "related_entities": [],
+          "recent_interactions": [],
+          "existing_facts": [],
+          "existing_relationships": []
+        }
+      },
+      "expectations": [
+        {
+          "path": "command_type",
+          "equals": "MERGE"
+        },
+        {
+          "path": "entity_merges[0].primary_entity_id",
+          "equals": "Person_marcusyi_main"
+        },
+        {
+          "path": "entity_merges[0].duplicate_entity_id",
+          "equals": "Person_marcyi_dup"
+        }
+      ]
+    },
+    {
+      "name": "merge_005",
+      "description": "Merge duplicate records for Nina Patel",
+      "request": {
+        "user_input": "Please keep Nina Patel as the primary record and merge duplicate entry N. Patel.",
+        "command_type": "MERGE",
+        "context": {
+          "matching_entities": [
+            {
+              "id": "Person_ninapatel_main",
+              "name": "Nina Patel"
+            },
+            {
+              "id": "Person_npatel_dup",
+              "name": "N. Patel"
+            }
+          ],
+          "related_entities": [],
+          "recent_interactions": [],
+          "existing_facts": [],
+          "existing_relationships": []
+        }
+      },
+      "expectations": [
+        {
+          "path": "command_type",
+          "equals": "MERGE"
+        },
+        {
+          "path": "entity_merges[0].primary_entity_id",
+          "equals": "Person_ninapatel_main"
+        },
+        {
+          "path": "entity_merges[0].duplicate_entity_id",
+          "equals": "Person_npatel_dup"
+        }
+      ]
+    },
+    {
+      "name": "merge_006",
+      "description": "Merge duplicate records for Oliver Grant",
+      "request": {
+        "user_input": "Please keep Oliver Grant as the primary record and merge duplicate entry Ollie Grant.",
+        "command_type": "MERGE",
+        "context": {
+          "matching_entities": [
+            {
+              "id": "Person_olivergrant_main",
+              "name": "Oliver Grant"
+            },
+            {
+              "id": "Person_ollie_dup",
+              "name": "Ollie Grant"
+            }
+          ],
+          "related_entities": [],
+          "recent_interactions": [],
+          "existing_facts": [],
+          "existing_relationships": []
+        }
+      },
+      "expectations": [
+        {
+          "path": "command_type",
+          "equals": "MERGE"
+        },
+        {
+          "path": "entity_merges[0].primary_entity_id",
+          "equals": "Person_olivergrant_main"
+        },
+        {
+          "path": "entity_merges[0].duplicate_entity_id",
+          "equals": "Person_ollie_dup"
+        }
+      ]
+    },
+    {
+      "name": "merge_007",
+      "description": "Merge duplicate records for Lillian Chu",
+      "request": {
+        "user_input": "Please keep Lillian Chu as the primary record and merge duplicate entry Lily Chu.",
+        "command_type": "MERGE",
+        "context": {
+          "matching_entities": [
+            {
+              "id": "Person_lillianchu_main",
+              "name": "Lillian Chu"
+            },
+            {
+              "id": "Person_lily_dup",
+              "name": "Lily Chu"
+            }
+          ],
+          "related_entities": [],
+          "recent_interactions": [],
+          "existing_facts": [],
+          "existing_relationships": []
+        }
+      },
+      "expectations": [
+        {
+          "path": "command_type",
+          "equals": "MERGE"
+        },
+        {
+          "path": "entity_merges[0].primary_entity_id",
+          "equals": "Person_lillianchu_main"
+        },
+        {
+          "path": "entity_merges[0].duplicate_entity_id",
+          "equals": "Person_lily_dup"
+        }
+      ]
+    },
+    {
+      "name": "merge_008",
+      "description": "Merge duplicate records for Peter Vaughn",
+      "request": {
+        "user_input": "Please keep Peter Vaughn as the primary record and merge duplicate entry Pete Vaughn.",
+        "command_type": "MERGE",
+        "context": {
+          "matching_entities": [
+            {
+              "id": "Person_petervaughn_main",
+              "name": "Peter Vaughn"
+            },
+            {
+              "id": "Person_pete_dup",
+              "name": "Pete Vaughn"
+            }
+          ],
+          "related_entities": [],
+          "recent_interactions": [],
+          "existing_facts": [],
+          "existing_relationships": []
+        }
+      },
+      "expectations": [
+        {
+          "path": "command_type",
+          "equals": "MERGE"
+        },
+        {
+          "path": "entity_merges[0].primary_entity_id",
+          "equals": "Person_petervaughn_main"
+        },
+        {
+          "path": "entity_merges[0].duplicate_entity_id",
+          "equals": "Person_pete_dup"
+        }
+      ]
+    },
+    {
+      "name": "merge_009",
+      "description": "Merge duplicate records for Ruth Ellis",
+      "request": {
+        "user_input": "Please keep Ruth Ellis as the primary record and merge duplicate entry Ruthie Ellis.",
+        "command_type": "MERGE",
+        "context": {
+          "matching_entities": [
+            {
+              "id": "Person_ruthellis_main",
+              "name": "Ruth Ellis"
+            },
+            {
+              "id": "Person_ruthie_dup",
+              "name": "Ruthie Ellis"
+            }
+          ],
+          "related_entities": [],
+          "recent_interactions": [],
+          "existing_facts": [],
+          "existing_relationships": []
+        }
+      },
+      "expectations": [
+        {
+          "path": "command_type",
+          "equals": "MERGE"
+        },
+        {
+          "path": "entity_merges[0].primary_entity_id",
+          "equals": "Person_ruthellis_main"
+        },
+        {
+          "path": "entity_merges[0].duplicate_entity_id",
+          "equals": "Person_ruthie_dup"
+        }
+      ]
+    },
+    {
+      "name": "merge_010",
+      "description": "Merge duplicate records for Samir Qureshi",
+      "request": {
+        "user_input": "Please keep Samir Qureshi as the primary record and merge duplicate entry Sam Q..",
+        "command_type": "MERGE",
+        "context": {
+          "matching_entities": [
+            {
+              "id": "Person_samir_main",
+              "name": "Samir Qureshi"
+            },
+            {
+              "id": "Person_samq_dup",
+              "name": "Sam Q."
+            }
+          ],
+          "related_entities": [],
+          "recent_interactions": [],
+          "existing_facts": [],
+          "existing_relationships": []
+        }
+      },
+      "expectations": [
+        {
+          "path": "command_type",
+          "equals": "MERGE"
+        },
+        {
+          "path": "entity_merges[0].primary_entity_id",
+          "equals": "Person_samir_main"
+        },
+        {
+          "path": "entity_merges[0].duplicate_entity_id",
+          "equals": "Person_samq_dup"
+        }
+      ]
+    },
+    {
+      "name": "merge_011",
+      "description": "Merge duplicate records for Tamar Singh",
+      "request": {
+        "user_input": "Please keep Tamar Singh as the primary record and merge duplicate entry Tam Singh.",
+        "command_type": "MERGE",
+        "context": {
+          "matching_entities": [
+            {
+              "id": "Person_tamar_main",
+              "name": "Tamar Singh"
+            },
+            {
+              "id": "Person_tamsingh_dup",
+              "name": "Tam Singh"
+            }
+          ],
+          "related_entities": [],
+          "recent_interactions": [],
+          "existing_facts": [],
+          "existing_relationships": []
+        }
+      },
+      "expectations": [
+        {
+          "path": "command_type",
+          "equals": "MERGE"
+        },
+        {
+          "path": "entity_merges[0].primary_entity_id",
+          "equals": "Person_tamar_main"
+        },
+        {
+          "path": "entity_merges[0].duplicate_entity_id",
+          "equals": "Person_tamsingh_dup"
+        }
+      ]
+    },
+    {
+      "name": "merge_012",
+      "description": "Merge duplicate records for Uma Keller",
+      "request": {
+        "user_input": "Please keep Uma Keller as the primary record and merge duplicate entry U. Keller.",
+        "command_type": "MERGE",
+        "context": {
+          "matching_entities": [
+            {
+              "id": "Person_uma_main",
+              "name": "Uma Keller"
+            },
+            {
+              "id": "Person_ukeller_dup",
+              "name": "U. Keller"
+            }
+          ],
+          "related_entities": [],
+          "recent_interactions": [],
+          "existing_facts": [],
+          "existing_relationships": []
+        }
+      },
+      "expectations": [
+        {
+          "path": "command_type",
+          "equals": "MERGE"
+        },
+        {
+          "path": "entity_merges[0].primary_entity_id",
+          "equals": "Person_uma_main"
+        },
+        {
+          "path": "entity_merges[0].duplicate_entity_id",
+          "equals": "Person_ukeller_dup"
+        }
+      ]
+    },
+    {
+      "name": "merge_013",
+      "description": "Merge duplicate records for Victor Lang",
+      "request": {
+        "user_input": "Please keep Victor Lang as the primary record and merge duplicate entry Vic Lang.",
+        "command_type": "MERGE",
+        "context": {
+          "matching_entities": [
+            {
+              "id": "Person_victorlang_main",
+              "name": "Victor Lang"
+            },
+            {
+              "id": "Person_viclang_dup",
+              "name": "Vic Lang"
+            }
+          ],
+          "related_entities": [],
+          "recent_interactions": [],
+          "existing_facts": [],
+          "existing_relationships": []
+        }
+      },
+      "expectations": [
+        {
+          "path": "command_type",
+          "equals": "MERGE"
+        },
+        {
+          "path": "entity_merges[0].primary_entity_id",
+          "equals": "Person_victorlang_main"
+        },
+        {
+          "path": "entity_merges[0].duplicate_entity_id",
+          "equals": "Person_viclang_dup"
+        }
+      ]
+    },
+    {
+      "name": "merge_014",
+      "description": "Merge duplicate records for Willow Hart",
+      "request": {
+        "user_input": "Please keep Willow Hart as the primary record and merge duplicate entry Will Hart.",
+        "command_type": "MERGE",
+        "context": {
+          "matching_entities": [
+            {
+              "id": "Person_willow_main",
+              "name": "Willow Hart"
+            },
+            {
+              "id": "Person_willhart_dup",
+              "name": "Will Hart"
+            }
+          ],
+          "related_entities": [],
+          "recent_interactions": [],
+          "existing_facts": [],
+          "existing_relationships": []
+        }
+      },
+      "expectations": [
+        {
+          "path": "command_type",
+          "equals": "MERGE"
+        },
+        {
+          "path": "entity_merges[0].primary_entity_id",
+          "equals": "Person_willow_main"
+        },
+        {
+          "path": "entity_merges[0].duplicate_entity_id",
+          "equals": "Person_willhart_dup"
+        }
+      ]
+    },
+    {
+      "name": "merge_015",
+      "description": "Merge duplicate records for Yara Ben",
+      "request": {
+        "user_input": "Please keep Yara Ben as the primary record and merge duplicate entry Y. Ben.",
+        "command_type": "MERGE",
+        "context": {
+          "matching_entities": [
+            {
+              "id": "Person_yaraben_main",
+              "name": "Yara Ben"
+            },
+            {
+              "id": "Person_yben_dup",
+              "name": "Y. Ben"
+            }
+          ],
+          "related_entities": [],
+          "recent_interactions": [],
+          "existing_facts": [],
+          "existing_relationships": []
+        }
+      },
+      "expectations": [
+        {
+          "path": "command_type",
+          "equals": "MERGE"
+        },
+        {
+          "path": "entity_merges[0].primary_entity_id",
+          "equals": "Person_yaraben_main"
+        },
+        {
+          "path": "entity_merges[0].duplicate_entity_id",
+          "equals": "Person_yben_dup"
+        }
+      ]
+    },
+    {
+      "name": "link_001",
+      "description": "Link Ava Kim with Briant Lee as mentor",
+      "request": {
+        "user_input": "Link Ava Kim with Briant Lee as mentor.",
+        "command_type": "LINK",
+        "context": {
+          "matching_entities": [
+            {
+              "id": "Person_avakim",
+              "name": "Ava Kim"
+            }
+          ],
+          "related_entities": [
+            {
+              "id": "Person_briantlee",
+              "name": "Briant Lee"
+            }
+          ],
+          "recent_interactions": [],
+          "existing_facts": [],
+          "existing_relationships": []
+        }
+      },
+      "expectations": [
+        {
+          "path": "command_type",
+          "equals": "LINK"
+        },
+        {
+          "path": "relationships[0].relationship_label",
+          "contains": "mentor"
+        },
+        {
+          "path": "relationships[0].relationship_type",
+          "equals": "new"
+        }
+      ]
+    },
+    {
+      "name": "link_002",
+      "description": "Link Cara Moss with Dev Patel as cofounder",
+      "request": {
+        "user_input": "Link Cara Moss with Dev Patel as cofounder.",
+        "command_type": "LINK",
+        "context": {
+          "matching_entities": [
+            {
+              "id": "Person_caramoss",
+              "name": "Cara Moss"
+            }
+          ],
+          "related_entities": [
+            {
+              "id": "Person_devpatel",
+              "name": "Dev Patel"
+            }
+          ],
+          "recent_interactions": [],
+          "existing_facts": [],
+          "existing_relationships": []
+        }
+      },
+      "expectations": [
+        {
+          "path": "command_type",
+          "equals": "LINK"
+        },
+        {
+          "path": "relationships[0].relationship_label",
+          "contains": "cofounder"
+        },
+        {
+          "path": "relationships[0].relationship_type",
+          "equals": "new"
+        }
+      ]
+    },
+    {
+      "name": "link_003",
+      "description": "Link Evan Ross with Fiona Daly as sibling",
+      "request": {
+        "user_input": "Link Evan Ross with Fiona Daly as sibling.",
+        "command_type": "LINK",
+        "context": {
+          "matching_entities": [
+            {
+              "id": "Person_evanross",
+              "name": "Evan Ross"
+            }
+          ],
+          "related_entities": [
+            {
+              "id": "Person_fionadaly",
+              "name": "Fiona Daly"
+            }
+          ],
+          "recent_interactions": [],
+          "existing_facts": [],
+          "existing_relationships": []
+        }
+      },
+      "expectations": [
+        {
+          "path": "command_type",
+          "equals": "LINK"
+        },
+        {
+          "path": "relationships[0].relationship_label",
+          "contains": "sibling"
+        },
+        {
+          "path": "relationships[0].relationship_type",
+          "equals": "new"
+        }
+      ]
+    },
+    {
+      "name": "link_004",
+      "description": "Link Galen Ortiz with Hana Luo as coach",
+      "request": {
+        "user_input": "Link Galen Ortiz with Hana Luo as coach.",
+        "command_type": "LINK",
+        "context": {
+          "matching_entities": [
+            {
+              "id": "Person_galenortiz",
+              "name": "Galen Ortiz"
+            }
+          ],
+          "related_entities": [
+            {
+              "id": "Person_hanaluo",
+              "name": "Hana Luo"
+            }
+          ],
+          "recent_interactions": [],
+          "existing_facts": [],
+          "existing_relationships": []
+        }
+      },
+      "expectations": [
+        {
+          "path": "command_type",
+          "equals": "LINK"
+        },
+        {
+          "path": "relationships[0].relationship_label",
+          "contains": "coach"
+        },
+        {
+          "path": "relationships[0].relationship_type",
+          "equals": "new"
+        }
+      ]
+    },
+    {
+      "name": "link_005",
+      "description": "Link Iris Bloom with Jace Ford as neighbor",
+      "request": {
+        "user_input": "Link Iris Bloom with Jace Ford as neighbor.",
+        "command_type": "LINK",
+        "context": {
+          "matching_entities": [
+            {
+              "id": "Person_irisbloom",
+              "name": "Iris Bloom"
+            }
+          ],
+          "related_entities": [
+            {
+              "id": "Person_jaceford",
+              "name": "Jace Ford"
+            }
+          ],
+          "recent_interactions": [],
+          "existing_facts": [],
+          "existing_relationships": []
+        }
+      },
+      "expectations": [
+        {
+          "path": "command_type",
+          "equals": "LINK"
+        },
+        {
+          "path": "relationships[0].relationship_label",
+          "contains": "neighbor"
+        },
+        {
+          "path": "relationships[0].relationship_type",
+          "equals": "new"
+        }
+      ]
+    },
+    {
+      "name": "link_006",
+      "description": "Link Kiran Shah with Lola Grey as trainer",
+      "request": {
+        "user_input": "Link Kiran Shah with Lola Grey as trainer.",
+        "command_type": "LINK",
+        "context": {
+          "matching_entities": [
+            {
+              "id": "Person_kiranshah",
+              "name": "Kiran Shah"
+            }
+          ],
+          "related_entities": [
+            {
+              "id": "Person_lolagrey",
+              "name": "Lola Grey"
+            }
+          ],
+          "recent_interactions": [],
+          "existing_facts": [],
+          "existing_relationships": []
+        }
+      },
+      "expectations": [
+        {
+          "path": "command_type",
+          "equals": "LINK"
+        },
+        {
+          "path": "relationships[0].relationship_label",
+          "contains": "trainer"
+        },
+        {
+          "path": "relationships[0].relationship_type",
+          "equals": "new"
+        }
+      ]
+    },
+    {
+      "name": "link_007",
+      "description": "Link Milo Keane with Nia Park as collaborator",
+      "request": {
+        "user_input": "Link Milo Keane with Nia Park as collaborator.",
+        "command_type": "LINK",
+        "context": {
+          "matching_entities": [
+            {
+              "id": "Person_milokeane",
+              "name": "Milo Keane"
+            }
+          ],
+          "related_entities": [
+            {
+              "id": "Person_niapark",
+              "name": "Nia Park"
+            }
+          ],
+          "recent_interactions": [],
+          "existing_facts": [],
+          "existing_relationships": []
+        }
+      },
+      "expectations": [
+        {
+          "path": "command_type",
+          "equals": "LINK"
+        },
+        {
+          "path": "relationships[0].relationship_label",
+          "contains": "collaborator"
+        },
+        {
+          "path": "relationships[0].relationship_type",
+          "equals": "new"
+        }
+      ]
+    },
+    {
+      "name": "link_008",
+      "description": "Link Oona Wells with Pia Novak as advisor",
+      "request": {
+        "user_input": "Link Oona Wells with Pia Novak as advisor.",
+        "command_type": "LINK",
+        "context": {
+          "matching_entities": [
+            {
+              "id": "Person_oonawells",
+              "name": "Oona Wells"
+            }
+          ],
+          "related_entities": [
+            {
+              "id": "Person_pianovak",
+              "name": "Pia Novak"
+            }
+          ],
+          "recent_interactions": [],
+          "existing_facts": [],
+          "existing_relationships": []
+        }
+      },
+      "expectations": [
+        {
+          "path": "command_type",
+          "equals": "LINK"
+        },
+        {
+          "path": "relationships[0].relationship_label",
+          "contains": "advisor"
+        },
+        {
+          "path": "relationships[0].relationship_type",
+          "equals": "new"
+        }
+      ]
+    },
+    {
+      "name": "link_009",
+      "description": "Link Quinn Hale with Rae Ibarra as partner",
+      "request": {
+        "user_input": "Link Quinn Hale with Rae Ibarra as partner.",
+        "command_type": "LINK",
+        "context": {
+          "matching_entities": [
+            {
+              "id": "Person_quinnhale",
+              "name": "Quinn Hale"
+            }
+          ],
+          "related_entities": [
+            {
+              "id": "Person_raeibarra",
+              "name": "Rae Ibarra"
+            }
+          ],
+          "recent_interactions": [],
+          "existing_facts": [],
+          "existing_relationships": []
+        }
+      },
+      "expectations": [
+        {
+          "path": "command_type",
+          "equals": "LINK"
+        },
+        {
+          "path": "relationships[0].relationship_label",
+          "contains": "partner"
+        },
+        {
+          "path": "relationships[0].relationship_type",
+          "equals": "new"
+        }
+      ]
+    },
+    {
+      "name": "link_010",
+      "description": "Link Seth Lin with Tara Moss as classmate",
+      "request": {
+        "user_input": "Link Seth Lin with Tara Moss as classmate.",
+        "command_type": "LINK",
+        "context": {
+          "matching_entities": [
+            {
+              "id": "Person_sethlin",
+              "name": "Seth Lin"
+            }
+          ],
+          "related_entities": [
+            {
+              "id": "Person_taramoss",
+              "name": "Tara Moss"
+            }
+          ],
+          "recent_interactions": [],
+          "existing_facts": [],
+          "existing_relationships": []
+        }
+      },
+      "expectations": [
+        {
+          "path": "command_type",
+          "equals": "LINK"
+        },
+        {
+          "path": "relationships[0].relationship_label",
+          "contains": "classmate"
+        },
+        {
+          "path": "relationships[0].relationship_type",
+          "equals": "new"
+        }
+      ]
+    },
+    {
+      "name": "link_011",
+      "description": "Link Uma Reed with Vik Rao as investor",
+      "request": {
+        "user_input": "Link Uma Reed with Vik Rao as investor.",
+        "command_type": "LINK",
+        "context": {
+          "matching_entities": [
+            {
+              "id": "Person_umareed",
+              "name": "Uma Reed"
+            }
+          ],
+          "related_entities": [
+            {
+              "id": "Person_vikrao",
+              "name": "Vik Rao"
+            }
+          ],
+          "recent_interactions": [],
+          "existing_facts": [],
+          "existing_relationships": []
+        }
+      },
+      "expectations": [
+        {
+          "path": "command_type",
+          "equals": "LINK"
+        },
+        {
+          "path": "relationships[0].relationship_label",
+          "contains": "investor"
+        },
+        {
+          "path": "relationships[0].relationship_type",
+          "equals": "new"
+        }
+      ]
+    },
+    {
+      "name": "link_012",
+      "description": "Link Will Tran with Xena Paul as client",
+      "request": {
+        "user_input": "Link Will Tran with Xena Paul as client.",
+        "command_type": "LINK",
+        "context": {
+          "matching_entities": [
+            {
+              "id": "Person_willtran",
+              "name": "Will Tran"
+            }
+          ],
+          "related_entities": [
+            {
+              "id": "Person_xenapaul",
+              "name": "Xena Paul"
+            }
+          ],
+          "recent_interactions": [],
+          "existing_facts": [],
+          "existing_relationships": []
+        }
+      },
+      "expectations": [
+        {
+          "path": "command_type",
+          "equals": "LINK"
+        },
+        {
+          "path": "relationships[0].relationship_label",
+          "contains": "client"
+        },
+        {
+          "path": "relationships[0].relationship_type",
+          "equals": "new"
+        }
+      ]
+    },
+    {
+      "name": "link_013",
+      "description": "Link Yuri Blake with Zara Reese as supplier",
+      "request": {
+        "user_input": "Link Yuri Blake with Zara Reese as supplier.",
+        "command_type": "LINK",
+        "context": {
+          "matching_entities": [
+            {
+              "id": "Person_yuriblake",
+              "name": "Yuri Blake"
+            }
+          ],
+          "related_entities": [
+            {
+              "id": "Person_zarareese",
+              "name": "Zara Reese"
+            }
+          ],
+          "recent_interactions": [],
+          "existing_facts": [],
+          "existing_relationships": []
+        }
+      },
+      "expectations": [
+        {
+          "path": "command_type",
+          "equals": "LINK"
+        },
+        {
+          "path": "relationships[0].relationship_label",
+          "contains": "supplier"
+        },
+        {
+          "path": "relationships[0].relationship_type",
+          "equals": "new"
+        }
+      ]
+    },
+    {
+      "name": "link_014",
+      "description": "Link Ben Adler with Clio West as roommate",
+      "request": {
+        "user_input": "Link Ben Adler with Clio West as roommate.",
+        "command_type": "LINK",
+        "context": {
+          "matching_entities": [
+            {
+              "id": "Person_benadler",
+              "name": "Ben Adler"
+            }
+          ],
+          "related_entities": [
+            {
+              "id": "Person_cliowest",
+              "name": "Clio West"
+            }
+          ],
+          "recent_interactions": [],
+          "existing_facts": [],
+          "existing_relationships": []
+        }
+      },
+      "expectations": [
+        {
+          "path": "command_type",
+          "equals": "LINK"
+        },
+        {
+          "path": "relationships[0].relationship_label",
+          "contains": "roommate"
+        },
+        {
+          "path": "relationships[0].relationship_type",
+          "equals": "new"
+        }
+      ]
+    },
+    {
+      "name": "link_015",
+      "description": "Link Dina Cho with Eli Ward as manager",
+      "request": {
+        "user_input": "Link Dina Cho with Eli Ward as manager.",
+        "command_type": "LINK",
+        "context": {
+          "matching_entities": [
+            {
+              "id": "Person_dinacho",
+              "name": "Dina Cho"
+            }
+          ],
+          "related_entities": [
+            {
+              "id": "Person_eliward",
+              "name": "Eli Ward"
+            }
+          ],
+          "recent_interactions": [],
+          "existing_facts": [],
+          "existing_relationships": []
+        }
+      },
+      "expectations": [
+        {
+          "path": "command_type",
+          "equals": "LINK"
+        },
+        {
+          "path": "relationships[0].relationship_label",
+          "contains": "manager"
+        },
+        {
+          "path": "relationships[0].relationship_type",
+          "equals": "new"
+        }
+      ]
+    },
+    {
+      "name": "delete_001",
+      "description": "Delete fact for Luis",
+      "request": {
+        "user_input": "Delete the note that Luis likes licorice.",
+        "command_type": "DELETE",
+        "context": {
+          "matching_entities": [
+            {
+              "id": "Person_luis_001",
+              "name": "Luis"
+            }
+          ],
+          "related_entities": [],
+          "recent_interactions": [],
+          "existing_facts": [
+            {
+              "id": "fact_luis_001",
+              "content": "likes licorice",
+              "category": "personal"
+            }
+          ],
+          "existing_relationships": []
+        }
+      },
+      "expectations": [
+        {
+          "path": "command_type",
+          "equals": "DELETE"
+        },
+        {
+          "path": "fact_updates[0].fact_id",
+          "equals": "fact_luis_001"
+        },
+        {
+          "path": "fact_updates[0].keep_old_fact",
+          "equals": false
+        }
+      ]
+    },
+    {
+      "name": "delete_002",
+      "description": "Delete fact for Mei",
+      "request": {
+        "user_input": "Delete the note that Mei works at Atlas Corp.",
+        "command_type": "DELETE",
+        "context": {
+          "matching_entities": [
+            {
+              "id": "Person_mei_002",
+              "name": "Mei"
+            }
+          ],
+          "related_entities": [],
+          "recent_interactions": [],
+          "existing_facts": [
+            {
+              "id": "fact_mei_002",
+              "content": "works at Atlas Corp",
+              "category": "personal"
+            }
+          ],
+          "existing_relationships": []
+        }
+      },
+      "expectations": [
+        {
+          "path": "command_type",
+          "equals": "DELETE"
+        },
+        {
+          "path": "fact_updates[0].fact_id",
+          "equals": "fact_mei_002"
+        },
+        {
+          "path": "fact_updates[0].keep_old_fact",
+          "equals": false
+        }
+      ]
+    },
+    {
+      "name": "delete_003",
+      "description": "Delete fact for Noah",
+      "request": {
+        "user_input": "Delete the note that Noah owns a sailboat.",
+        "command_type": "DELETE",
+        "context": {
+          "matching_entities": [
+            {
+              "id": "Person_noah_003",
+              "name": "Noah"
+            }
+          ],
+          "related_entities": [],
+          "recent_interactions": [],
+          "existing_facts": [
+            {
+              "id": "fact_noah_003",
+              "content": "owns a sailboat",
+              "category": "personal"
+            }
+          ],
+          "existing_relationships": []
+        }
+      },
+      "expectations": [
+        {
+          "path": "command_type",
+          "equals": "DELETE"
+        },
+        {
+          "path": "fact_updates[0].fact_id",
+          "equals": "fact_noah_003"
+        },
+        {
+          "path": "fact_updates[0].keep_old_fact",
+          "equals": false
+        }
+      ]
+    },
+    {
+      "name": "delete_004",
+      "description": "Delete fact for Olive",
+      "request": {
+        "user_input": "Delete the note that Olive collects jade.",
+        "command_type": "DELETE",
+        "context": {
+          "matching_entities": [
+            {
+              "id": "Person_olive_004",
+              "name": "Olive"
+            }
+          ],
+          "related_entities": [],
+          "recent_interactions": [],
+          "existing_facts": [
+            {
+              "id": "fact_olive_004",
+              "content": "collects jade",
+              "category": "personal"
+            }
+          ],
+          "existing_relationships": []
+        }
+      },
+      "expectations": [
+        {
+          "path": "command_type",
+          "equals": "DELETE"
+        },
+        {
+          "path": "fact_updates[0].fact_id",
+          "equals": "fact_olive_004"
+        },
+        {
+          "path": "fact_updates[0].keep_old_fact",
+          "equals": false
+        }
+      ]
+    },
+    {
+      "name": "delete_005",
+      "description": "Delete fact for Paolo",
+      "request": {
+        "user_input": "Delete the note that Paolo hates hiking.",
+        "command_type": "DELETE",
+        "context": {
+          "matching_entities": [
+            {
+              "id": "Person_paolo_005",
+              "name": "Paolo"
+            }
+          ],
+          "related_entities": [],
+          "recent_interactions": [],
+          "existing_facts": [
+            {
+              "id": "fact_paolo_005",
+              "content": "hates hiking",
+              "category": "personal"
+            }
+          ],
+          "existing_relationships": []
+        }
+      },
+      "expectations": [
+        {
+          "path": "command_type",
+          "equals": "DELETE"
+        },
+        {
+          "path": "fact_updates[0].fact_id",
+          "equals": "fact_paolo_005"
+        },
+        {
+          "path": "fact_updates[0].keep_old_fact",
+          "equals": false
+        }
+      ]
+    },
+    {
+      "name": "delete_006",
+      "description": "Delete fact for Quincy",
+      "request": {
+        "user_input": "Delete the note that Quincy drives a red van.",
+        "command_type": "DELETE",
+        "context": {
+          "matching_entities": [
+            {
+              "id": "Person_quincy_006",
+              "name": "Quincy"
+            }
+          ],
+          "related_entities": [],
+          "recent_interactions": [],
+          "existing_facts": [
+            {
+              "id": "fact_quincy_006",
+              "content": "drives a red van",
+              "category": "personal"
+            }
+          ],
+          "existing_relationships": []
+        }
+      },
+      "expectations": [
+        {
+          "path": "command_type",
+          "equals": "DELETE"
+        },
+        {
+          "path": "fact_updates[0].fact_id",
+          "equals": "fact_quincy_006"
+        },
+        {
+          "path": "fact_updates[0].keep_old_fact",
+          "equals": false
+        }
+      ]
+    },
+    {
+      "name": "delete_007",
+      "description": "Delete fact for Reese",
+      "request": {
+        "user_input": "Delete the note that Reese studies Russian.",
+        "command_type": "DELETE",
+        "context": {
+          "matching_entities": [
+            {
+              "id": "Person_reese_007",
+              "name": "Reese"
+            }
+          ],
+          "related_entities": [],
+          "recent_interactions": [],
+          "existing_facts": [
+            {
+              "id": "fact_reese_007",
+              "content": "studies Russian",
+              "category": "personal"
+            }
+          ],
+          "existing_relationships": []
+        }
+      },
+      "expectations": [
+        {
+          "path": "command_type",
+          "equals": "DELETE"
+        },
+        {
+          "path": "fact_updates[0].fact_id",
+          "equals": "fact_reese_007"
+        },
+        {
+          "path": "fact_updates[0].keep_old_fact",
+          "equals": false
+        }
+      ]
+    },
+    {
+      "name": "delete_008",
+      "description": "Delete fact for Sumi",
+      "request": {
+        "user_input": "Delete the note that Sumi is allergic to kiwi.",
+        "command_type": "DELETE",
+        "context": {
+          "matching_entities": [
+            {
+              "id": "Person_sumi_008",
+              "name": "Sumi"
+            }
+          ],
+          "related_entities": [],
+          "recent_interactions": [],
+          "existing_facts": [
+            {
+              "id": "fact_sumi_008",
+              "content": "is allergic to kiwi",
+              "category": "personal"
+            }
+          ],
+          "existing_relationships": []
+        }
+      },
+      "expectations": [
+        {
+          "path": "command_type",
+          "equals": "DELETE"
+        },
+        {
+          "path": "fact_updates[0].fact_id",
+          "equals": "fact_sumi_008"
+        },
+        {
+          "path": "fact_updates[0].keep_old_fact",
+          "equals": false
+        }
+      ]
+    },
+    {
+      "name": "delete_009",
+      "description": "Delete fact for Tariq",
+      "request": {
+        "user_input": "Delete the note that Tariq brews kombucha.",
+        "command_type": "DELETE",
+        "context": {
+          "matching_entities": [
+            {
+              "id": "Person_tariq_009",
+              "name": "Tariq"
+            }
+          ],
+          "related_entities": [],
+          "recent_interactions": [],
+          "existing_facts": [
+            {
+              "id": "fact_tariq_009",
+              "content": "brews kombucha",
+              "category": "personal"
+            }
+          ],
+          "existing_relationships": []
+        }
+      },
+      "expectations": [
+        {
+          "path": "command_type",
+          "equals": "DELETE"
+        },
+        {
+          "path": "fact_updates[0].fact_id",
+          "equals": "fact_tariq_009"
+        },
+        {
+          "path": "fact_updates[0].keep_old_fact",
+          "equals": false
+        }
+      ]
+    },
+    {
+      "name": "delete_010",
+      "description": "Delete fact for Una",
+      "request": {
+        "user_input": "Delete the note that Una runs marathons.",
+        "command_type": "DELETE",
+        "context": {
+          "matching_entities": [
+            {
+              "id": "Person_una_010",
+              "name": "Una"
+            }
+          ],
+          "related_entities": [],
+          "recent_interactions": [],
+          "existing_facts": [
+            {
+              "id": "fact_una_010",
+              "content": "runs marathons",
+              "category": "personal"
+            }
+          ],
+          "existing_relationships": []
+        }
+      },
+      "expectations": [
+        {
+          "path": "command_type",
+          "equals": "DELETE"
+        },
+        {
+          "path": "fact_updates[0].fact_id",
+          "equals": "fact_una_010"
+        },
+        {
+          "path": "fact_updates[0].keep_old_fact",
+          "equals": false
+        }
+      ]
+    },
+    {
+      "name": "delete_011",
+      "description": "Delete fact for Vera",
+      "request": {
+        "user_input": "Delete the note that Vera plays cello.",
+        "command_type": "DELETE",
+        "context": {
+          "matching_entities": [
+            {
+              "id": "Person_vera_011",
+              "name": "Vera"
+            }
+          ],
+          "related_entities": [],
+          "recent_interactions": [],
+          "existing_facts": [
+            {
+              "id": "fact_vera_011",
+              "content": "plays cello",
+              "category": "personal"
+            }
+          ],
+          "existing_relationships": []
+        }
+      },
+      "expectations": [
+        {
+          "path": "command_type",
+          "equals": "DELETE"
+        },
+        {
+          "path": "fact_updates[0].fact_id",
+          "equals": "fact_vera_011"
+        },
+        {
+          "path": "fact_updates[0].keep_old_fact",
+          "equals": false
+        }
+      ]
+    },
+    {
+      "name": "delete_012",
+      "description": "Delete fact for Walt",
+      "request": {
+        "user_input": "Delete the note that Walt collects stamps.",
+        "command_type": "DELETE",
+        "context": {
+          "matching_entities": [
+            {
+              "id": "Person_walt_012",
+              "name": "Walt"
+            }
+          ],
+          "related_entities": [],
+          "recent_interactions": [],
+          "existing_facts": [
+            {
+              "id": "fact_walt_012",
+              "content": "collects stamps",
+              "category": "personal"
+            }
+          ],
+          "existing_relationships": []
+        }
+      },
+      "expectations": [
+        {
+          "path": "command_type",
+          "equals": "DELETE"
+        },
+        {
+          "path": "fact_updates[0].fact_id",
+          "equals": "fact_walt_012"
+        },
+        {
+          "path": "fact_updates[0].keep_old_fact",
+          "equals": false
+        }
+      ]
+    },
+    {
+      "name": "delete_013",
+      "description": "Delete fact for Xavi",
+      "request": {
+        "user_input": "Delete the note that Xavi owns a kayak.",
+        "command_type": "DELETE",
+        "context": {
+          "matching_entities": [
+            {
+              "id": "Person_xavi_013",
+              "name": "Xavi"
+            }
+          ],
+          "related_entities": [],
+          "recent_interactions": [],
+          "existing_facts": [
+            {
+              "id": "fact_xavi_013",
+              "content": "owns a kayak",
+              "category": "personal"
+            }
+          ],
+          "existing_relationships": []
+        }
+      },
+      "expectations": [
+        {
+          "path": "command_type",
+          "equals": "DELETE"
+        },
+        {
+          "path": "fact_updates[0].fact_id",
+          "equals": "fact_xavi_013"
+        },
+        {
+          "path": "fact_updates[0].keep_old_fact",
+          "equals": false
+        }
+      ]
+    },
+    {
+      "name": "delete_014",
+      "description": "Delete fact for Ying",
+      "request": {
+        "user_input": "Delete the note that Ying teaches pottery.",
+        "command_type": "DELETE",
+        "context": {
+          "matching_entities": [
+            {
+              "id": "Person_ying_014",
+              "name": "Ying"
+            }
+          ],
+          "related_entities": [],
+          "recent_interactions": [],
+          "existing_facts": [
+            {
+              "id": "fact_ying_014",
+              "content": "teaches pottery",
+              "category": "personal"
+            }
+          ],
+          "existing_relationships": []
+        }
+      },
+      "expectations": [
+        {
+          "path": "command_type",
+          "equals": "DELETE"
+        },
+        {
+          "path": "fact_updates[0].fact_id",
+          "equals": "fact_ying_014"
+        },
+        {
+          "path": "fact_updates[0].keep_old_fact",
+          "equals": false
+        }
+      ]
+    },
+    {
+      "name": "delete_015",
+      "description": "Delete fact for Zane",
+      "request": {
+        "user_input": "Delete the note that Zane grows orchids.",
+        "command_type": "DELETE",
+        "context": {
+          "matching_entities": [
+            {
+              "id": "Person_zane_015",
+              "name": "Zane"
+            }
+          ],
+          "related_entities": [],
+          "recent_interactions": [],
+          "existing_facts": [
+            {
+              "id": "fact_zane_015",
+              "content": "grows orchids",
+              "category": "personal"
+            }
+          ],
+          "existing_relationships": []
+        }
+      },
+      "expectations": [
+        {
+          "path": "command_type",
+          "equals": "DELETE"
+        },
+        {
+          "path": "fact_updates[0].fact_id",
+          "equals": "fact_zane_015"
+        },
+        {
+          "path": "fact_updates[0].keep_old_fact",
+          "equals": false
+        }
+      ]
+    },
+    {
+      "name": "annotate_001",
+      "description": "Annotation for Abel",
+      "request": {
+        "user_input": "note that Abel is nervous about public speaking.",
+        "command_type": "ANNOTATE",
+        "context": {
+          "matching_entities": [
+            {
+              "id": "Person_abel_annot",
+              "name": "Abel"
+            }
+          ],
+          "related_entities": [],
+          "recent_interactions": [],
+          "existing_facts": [],
+          "existing_relationships": []
+        }
+      },
+      "expectations": [
+        {
+          "path": "command_type",
+          "equals": "ANNOTATE"
+        },
+        {
+          "path": "cautions[0].entity_id",
+          "equals": "Person_abel_annot"
+        },
+        {
+          "path": "cautions[0].caution_text",
+          "contains": "public speaking"
+        },
+        {
+          "path": "cautions[0].severity",
+          "equals": "medium"
+        }
+      ]
+    },
+    {
+      "name": "annotate_002",
+      "description": "Annotation for Becca",
+      "request": {
+        "user_input": "flag that Becca dislikes loud venues.",
+        "command_type": "ANNOTATE",
+        "context": {
+          "matching_entities": [
+            {
+              "id": "Person_becca_annot",
+              "name": "Becca"
+            }
+          ],
+          "related_entities": [],
+          "recent_interactions": [],
+          "existing_facts": [],
+          "existing_relationships": []
+        }
+      },
+      "expectations": [
+        {
+          "path": "command_type",
+          "equals": "ANNOTATE"
+        },
+        {
+          "path": "cautions[0].entity_id",
+          "equals": "Person_becca_annot"
+        },
+        {
+          "path": "cautions[0].caution_text",
+          "contains": "loud"
+        },
+        {
+          "path": "cautions[0].severity",
+          "equals": "low"
+        }
+      ]
+    },
+    {
+      "name": "annotate_003",
+      "description": "Annotation for Caleb",
+      "request": {
+        "user_input": "set a reminder to send Caleb the slide deck.",
+        "command_type": "ANNOTATE",
+        "context": {
+          "matching_entities": [
+            {
+              "id": "Person_caleb_annot",
+              "name": "Caleb"
+            }
+          ],
+          "related_entities": [],
+          "recent_interactions": [],
+          "existing_facts": [],
+          "existing_relationships": []
+        }
+      },
+      "expectations": [
+        {
+          "path": "command_type",
+          "equals": "ANNOTATE"
+        },
+        {
+          "path": "action_items[0].entity_id",
+          "equals": "Person_caleb_annot"
+        },
+        {
+          "path": "action_items[0].action",
+          "contains": "slide deck"
+        }
+      ]
+    },
+    {
+      "name": "annotate_004",
+      "description": "Annotation for Darya",
+      "request": {
+        "user_input": "schedule a follow-up call with Darya.",
+        "command_type": "ANNOTATE",
+        "context": {
+          "matching_entities": [
+            {
+              "id": "Person_darya_annot",
+              "name": "Darya"
+            }
+          ],
+          "related_entities": [],
+          "recent_interactions": [],
+          "existing_facts": [],
+          "existing_relationships": []
+        }
+      },
+      "expectations": [
+        {
+          "path": "command_type",
+          "equals": "ANNOTATE"
+        },
+        {
+          "path": "action_items[0].entity_id",
+          "equals": "Person_darya_annot"
+        },
+        {
+          "path": "action_items[0].action",
+          "contains": "follow-up"
+        }
+      ]
+    },
+    {
+      "name": "annotate_005",
+      "description": "Annotation for Eamon",
+      "request": {
+        "user_input": "track that Eamon loves astronomy.",
+        "command_type": "ANNOTATE",
+        "context": {
+          "matching_entities": [
+            {
+              "id": "Person_eamon_annot",
+              "name": "Eamon"
+            }
+          ],
+          "related_entities": [],
+          "recent_interactions": [],
+          "existing_facts": [],
+          "existing_relationships": []
+        }
+      },
+      "expectations": [
+        {
+          "path": "command_type",
+          "equals": "ANNOTATE"
+        },
+        {
+          "path": "conversation_topics[0].entity_id",
+          "equals": "Person_eamon_annot"
+        },
+        {
+          "path": "conversation_topics[0].topic",
+          "contains": "astronomy"
+        }
+      ]
+    },
+    {
+      "name": "annotate_006",
+      "description": "Annotation for Flora",
+      "request": {
+        "user_input": "remember Flora wants to discuss gardening.",
+        "command_type": "ANNOTATE",
+        "context": {
+          "matching_entities": [
+            {
+              "id": "Person_flora_annot",
+              "name": "Flora"
+            }
+          ],
+          "related_entities": [],
+          "recent_interactions": [],
+          "existing_facts": [],
+          "existing_relationships": []
+        }
+      },
+      "expectations": [
+        {
+          "path": "command_type",
+          "equals": "ANNOTATE"
+        },
+        {
+          "path": "conversation_topics[0].entity_id",
+          "equals": "Person_flora_annot"
+        },
+        {
+          "path": "conversation_topics[0].topic",
+          "contains": "gardening"
+        }
+      ]
+    },
+    {
+      "name": "annotate_007",
+      "description": "Annotation for Gideon",
+      "request": {
+        "user_input": "add a caution that Gideon is allergic to walnuts.",
+        "command_type": "ANNOTATE",
+        "context": {
+          "matching_entities": [
+            {
+              "id": "Person_gideon_annot",
+              "name": "Gideon"
+            }
+          ],
+          "related_entities": [],
+          "recent_interactions": [],
+          "existing_facts": [],
+          "existing_relationships": []
+        }
+      },
+      "expectations": [
+        {
+          "path": "command_type",
+          "equals": "ANNOTATE"
+        },
+        {
+          "path": "cautions[0].entity_id",
+          "equals": "Person_gideon_annot"
+        },
+        {
+          "path": "cautions[0].caution_text",
+          "contains": "walnuts"
+        },
+        {
+          "path": "cautions[0].severity",
+          "equals": "high"
+        }
+      ]
+    },
+    {
+      "name": "annotate_008",
+      "description": "Annotation for Helena",
+      "request": {
+        "user_input": "please set an action item to send Helena sketches.",
+        "command_type": "ANNOTATE",
+        "context": {
+          "matching_entities": [
+            {
+              "id": "Person_helena_annot",
+              "name": "Helena"
+            }
+          ],
+          "related_entities": [],
+          "recent_interactions": [],
+          "existing_facts": [],
+          "existing_relationships": []
+        }
+      },
+      "expectations": [
+        {
+          "path": "command_type",
+          "equals": "ANNOTATE"
+        },
+        {
+          "path": "action_items[0].entity_id",
+          "equals": "Person_helena_annot"
+        },
+        {
+          "path": "action_items[0].action",
+          "contains": "sketches"
+        }
+      ]
+    },
+    {
+      "name": "annotate_009",
+      "description": "Annotation for Ida",
+      "request": {
+        "user_input": "log that Ida loves architecture chats.",
+        "command_type": "ANNOTATE",
+        "context": {
+          "matching_entities": [
+            {
+              "id": "Person_ida_annot",
+              "name": "Ida"
+            }
+          ],
+          "related_entities": [],
+          "recent_interactions": [],
+          "existing_facts": [],
+          "existing_relationships": []
+        }
+      },
+      "expectations": [
+        {
+          "path": "command_type",
+          "equals": "ANNOTATE"
+        },
+        {
+          "path": "conversation_topics[0].entity_id",
+          "equals": "Person_ida_annot"
+        },
+        {
+          "path": "conversation_topics[0].topic",
+          "contains": "architecture"
+        }
+      ]
+    },
+    {
+      "name": "annotate_010",
+      "description": "Annotation for Jace",
+      "request": {
+        "user_input": "note that Jace is sensitive about budget.",
+        "command_type": "ANNOTATE",
+        "context": {
+          "matching_entities": [
+            {
+              "id": "Person_jace_annot",
+              "name": "Jace"
+            }
+          ],
+          "related_entities": [],
+          "recent_interactions": [],
+          "existing_facts": [],
+          "existing_relationships": []
+        }
+      },
+      "expectations": [
+        {
+          "path": "command_type",
+          "equals": "ANNOTATE"
+        },
+        {
+          "path": "cautions[0].entity_id",
+          "equals": "Person_jace_annot"
+        },
+        {
+          "path": "cautions[0].caution_text",
+          "contains": "budget"
+        },
+        {
+          "path": "cautions[0].severity",
+          "equals": "medium"
+        }
+      ]
+    },
+    {
+      "name": "annotate_011",
+      "description": "Annotation for Kira",
+      "request": {
+        "user_input": "remind me to send Kira the podcast link.",
+        "command_type": "ANNOTATE",
+        "context": {
+          "matching_entities": [
+            {
+              "id": "Person_kira_annot",
+              "name": "Kira"
+            }
+          ],
+          "related_entities": [],
+          "recent_interactions": [],
+          "existing_facts": [],
+          "existing_relationships": []
+        }
+      },
+      "expectations": [
+        {
+          "path": "command_type",
+          "equals": "ANNOTATE"
+        },
+        {
+          "path": "action_items[0].entity_id",
+          "equals": "Person_kira_annot"
+        },
+        {
+          "path": "action_items[0].action",
+          "contains": "podcast"
+        }
+      ]
+    },
+    {
+      "name": "annotate_012",
+      "description": "Annotation for Lior",
+      "request": {
+        "user_input": "track that Lior enjoys plant swaps.",
+        "command_type": "ANNOTATE",
+        "context": {
+          "matching_entities": [
+            {
+              "id": "Person_lior_annot",
+              "name": "Lior"
+            }
+          ],
+          "related_entities": [],
+          "recent_interactions": [],
+          "existing_facts": [],
+          "existing_relationships": []
+        }
+      },
+      "expectations": [
+        {
+          "path": "command_type",
+          "equals": "ANNOTATE"
+        },
+        {
+          "path": "conversation_topics[0].entity_id",
+          "equals": "Person_lior_annot"
+        },
+        {
+          "path": "conversation_topics[0].topic",
+          "contains": "plant"
+        }
+      ]
+    },
+    {
+      "name": "annotate_013",
+      "description": "Annotation for Mara",
+      "request": {
+        "user_input": "warn that Mara is allergic to bee stings.",
+        "command_type": "ANNOTATE",
+        "context": {
+          "matching_entities": [
+            {
+              "id": "Person_mara_annot",
+              "name": "Mara"
+            }
+          ],
+          "related_entities": [],
+          "recent_interactions": [],
+          "existing_facts": [],
+          "existing_relationships": []
+        }
+      },
+      "expectations": [
+        {
+          "path": "command_type",
+          "equals": "ANNOTATE"
+        },
+        {
+          "path": "cautions[0].entity_id",
+          "equals": "Person_mara_annot"
+        },
+        {
+          "path": "cautions[0].caution_text",
+          "contains": "bee"
+        },
+        {
+          "path": "cautions[0].severity",
+          "equals": "high"
+        }
+      ]
+    },
+    {
+      "name": "annotate_014",
+      "description": "Annotation for Nora",
+      "request": {
+        "user_input": "add an action item to share Nora's portfolio.",
+        "command_type": "ANNOTATE",
+        "context": {
+          "matching_entities": [
+            {
+              "id": "Person_nora_annot",
+              "name": "Nora"
+            }
+          ],
+          "related_entities": [],
+          "recent_interactions": [],
+          "existing_facts": [],
+          "existing_relationships": []
+        }
+      },
+      "expectations": [
+        {
+          "path": "command_type",
+          "equals": "ANNOTATE"
+        },
+        {
+          "path": "action_items[0].entity_id",
+          "equals": "Person_nora_annot"
+        },
+        {
+          "path": "action_items[0].action",
+          "contains": "portfolio"
+        }
+      ]
+    },
+    {
+      "name": "annotate_015",
+      "description": "Annotation for Oleg",
+      "request": {
+        "user_input": "log that Oleg likes discussing city planning.",
+        "command_type": "ANNOTATE",
+        "context": {
+          "matching_entities": [
+            {
+              "id": "Person_oleg_annot",
+              "name": "Oleg"
+            }
+          ],
+          "related_entities": [],
+          "recent_interactions": [],
+          "existing_facts": [],
+          "existing_relationships": []
+        }
+      },
+      "expectations": [
+        {
+          "path": "command_type",
+          "equals": "ANNOTATE"
+        },
+        {
+          "path": "conversation_topics[0].entity_id",
+          "equals": "Person_oleg_annot"
+        },
+        {
+          "path": "conversation_topics[0].topic",
+          "contains": "city planning"
+        }
+      ]
+    },
+    {
+      "name": "annotate_016",
+      "description": "Annotation for Pia",
+      "request": {
+        "user_input": "note that Pia hates spicy food.",
+        "command_type": "ANNOTATE",
+        "context": {
+          "matching_entities": [
+            {
+              "id": "Person_pia_annot",
+              "name": "Pia"
+            }
+          ],
+          "related_entities": [],
+          "recent_interactions": [],
+          "existing_facts": [],
+          "existing_relationships": []
+        }
+      },
+      "expectations": [
+        {
+          "path": "command_type",
+          "equals": "ANNOTATE"
+        },
+        {
+          "path": "cautions[0].entity_id",
+          "equals": "Person_pia_annot"
+        },
+        {
+          "path": "cautions[0].caution_text",
+          "contains": "spicy"
+        },
+        {
+          "path": "cautions[0].severity",
+          "equals": "low"
+        }
+      ]
+    },
+    {
+      "name": "annotate_017",
+      "description": "Annotation for Quin",
+      "request": {
+        "user_input": "remember Quin wants to talk about fermentation.",
+        "command_type": "ANNOTATE",
+        "context": {
+          "matching_entities": [
+            {
+              "id": "Person_quin_annot",
+              "name": "Quin"
+            }
+          ],
+          "related_entities": [],
+          "recent_interactions": [],
+          "existing_facts": [],
+          "existing_relationships": []
+        }
+      },
+      "expectations": [
+        {
+          "path": "command_type",
+          "equals": "ANNOTATE"
+        },
+        {
+          "path": "conversation_topics[0].entity_id",
+          "equals": "Person_quin_annot"
+        },
+        {
+          "path": "conversation_topics[0].topic",
+          "contains": "fermentation"
+        }
+      ]
+    },
+    {
+      "name": "annotate_018",
+      "description": "Annotation for Rhea",
+      "request": {
+        "user_input": "set a reminder to send Rhea the grant link.",
+        "command_type": "ANNOTATE",
+        "context": {
+          "matching_entities": [
+            {
+              "id": "Person_rhea_annot",
+              "name": "Rhea"
+            }
+          ],
+          "related_entities": [],
+          "recent_interactions": [],
+          "existing_facts": [],
+          "existing_relationships": []
+        }
+      },
+      "expectations": [
+        {
+          "path": "command_type",
+          "equals": "ANNOTATE"
+        },
+        {
+          "path": "action_items[0].entity_id",
+          "equals": "Person_rhea_annot"
+        },
+        {
+          "path": "action_items[0].action",
+          "contains": "grant"
+        }
+      ]
+    },
+    {
+      "name": "annotate_019",
+      "description": "Annotation for Saul",
+      "request": {
+        "user_input": "flag that Saul gets migraines from neon lights.",
+        "command_type": "ANNOTATE",
+        "context": {
+          "matching_entities": [
+            {
+              "id": "Person_saul_annot",
+              "name": "Saul"
+            }
+          ],
+          "related_entities": [],
+          "recent_interactions": [],
+          "existing_facts": [],
+          "existing_relationships": []
+        }
+      },
+      "expectations": [
+        {
+          "path": "command_type",
+          "equals": "ANNOTATE"
+        },
+        {
+          "path": "cautions[0].entity_id",
+          "equals": "Person_saul_annot"
+        },
+        {
+          "path": "cautions[0].caution_text",
+          "contains": "neon"
+        },
+        {
+          "path": "cautions[0].severity",
+          "equals": "high"
+        }
+      ]
+    },
+    {
+      "name": "annotate_020",
+      "description": "Annotation for Tova",
+      "request": {
+        "user_input": "plan to deliver Tova's sample pack.",
+        "command_type": "ANNOTATE",
+        "context": {
+          "matching_entities": [
+            {
+              "id": "Person_tova_annot",
+              "name": "Tova"
+            }
+          ],
+          "related_entities": [],
+          "recent_interactions": [],
+          "existing_facts": [],
+          "existing_relationships": []
+        }
+      },
+      "expectations": [
+        {
+          "path": "command_type",
+          "equals": "ANNOTATE"
+        },
+        {
+          "path": "action_items[0].entity_id",
+          "equals": "Person_tova_annot"
+        },
+        {
+          "path": "action_items[0].action",
+          "contains": "sample"
+        }
+      ]
+    }
+  ]
+}
